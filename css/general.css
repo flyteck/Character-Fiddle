@@ -262,7 +262,8 @@
     	padding: 5px 10px;
     	margin: 5px;
     	border-radius: 4px;
-    	background: red;
+    	background: #3C5034;
+    	color: white;
     	position: absolute;
 	    bottom: 0;
 	    right: 0;
