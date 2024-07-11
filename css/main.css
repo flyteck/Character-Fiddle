@@ -1,213 +1,13 @@
-    @import url("https://use.fontawesome.com/releases/v5.0.9/css/all.css");
-    @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Sedan:ital@0;1&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap");
-    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Quintessential&family=Satisfy&family=Sriracha&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
     html {
       background: #09111D;
-      background-size: 250px;
-      font-family: "Dosis", sans-serif;
     }
 
-    body {
-      margin: 0;
+     body {
       color: #14143c;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       background: linear-gradient(180deg, rgba(15, 13, 17, 0) 80vh, rgb(0 0 0) 100vh, rgb(0 0 0) 120vh, rgba(15, 13, 17, 0) 250vh);
       background-size: 100% auto;
       background-repeat: no-repeat;
       background-position: center top;
-      font-size: 1.02em;
-    }
-
-    .flex-column {
-      display: flex;
-      flex-direction: column;
-    }
-
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
-    .rounded-image {
-      border-radius: 12px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #213353;
-      transition: 150ms ease;
-    }
-
-    a:hover,
-    a:focus {
-      color: #30598c;
-    }
-
-    a.tab-nav-link:hover, a.tab-nav-link:focus {
-      color: #aec4e8;
-    }
-
-    b {
-        font-weight: 600;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px dashed #aec4e8;
-    }
-
-    details {
-      overflow: hidden; /* Keep this line to prevent an odd blue outline around the element in Safari. */
-      transition: 300ms ease;
-    }
-
-    div.details-body { 
-     max-height: 0;
-     overflow: hidden;
-     opacity: 0;
-     transition: 300ms ease;
-    }
-
-    details[open] + div.details-body {
-     max-height: 500px; /* Set a max-height value enough to show all the content */ 
-     border-color: #888;
-     opacity: 1;
-    }
-
-    details summary::-webkit-details-marker {
-      display:none;
-    }
-
-    details > summary, details[open] > summary {
-        list-style-type: none;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    details > summary:after {
-        border: 1px solid #242460;
-        background: #bcd4ff;
-        content: '✖';
-        font-family: sans-serif;
-        font-size: 13px;
-        width: 20px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100%;
-        transform: rotate(45deg);
-        transition: 200ms ease;
-    }
-
-    details > summary:hover:after {
-      background: #8cb2f5;
-    }
-
-    details[open] > summary:after {
-      transform: rotate(0turn);
-    }
-
-    button {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      color: inherit;
-      cursor: pointer;
-      background: none;
-    }
-
-    h1, h2, h3, h4 {
-      margin: 0;
-      font-weight: 400;
-    }
-
-    h1, h2 {
-      font-family: "Averia Serif Libre", serif;
-      margin: 5px 0;
-    }
-
-    h3, h4 {
-      font-family: "Piazzolla", serif;
-      margin: 0 0 10px;
-    }
-
-    h4 {
-      font-size: 110%;
-      font-weight: 500;
-    }
-
-    .text-container h4, .sticky-box h4 {
-      margin: -5px 0 5px;
-    }
-
-    .text-container h4 {
-      display: flex;
-      align-items: center;
-    }
-
-    .text-container h4 i {
-      margin-right: 5px;
-    }
-
-    .outfit-checkbox-container h4 {
-      font-size: 100%;
-      margin: 0 0 5px;
-    }
-
-    .subtitle {
-      font-size: 90%;
-    }
-
-    audio::-webkit-media-controls-panel {
-      background-color: #4268b7;
-      border-color: #4268b7;
-      color: black;
-      padding: 0;
-      overflow: visible;
-    }
-
-    audio::-webkit-media-controls-play-button {
-      background-color: #588cf1;
-      border-radius: 100%;
-    }
-
-    audio::-webkit-media-controls-play-button:hover,
-    audio::-webkit-media-controls-play-button:focus {
-      background-color: #6197ff;
-      transition: 300ms ease;
-    }
-
-    audio::-webkit-media-controls-current-time-display,
-    audio::-webkit-media-controls-time-remaining-display {
-      color: black;
-      text-shadow: none;
-      font-family: "Dosis";
-    }
-
-    audio {
-      width: calc(100% - 20px);
-      height: 40px;
-      margin: 7px 10px 7px 0;
-      border-radius: 10px;
-    }
-
-    .left {
-      text-align: left;
-    }
-
-    .right {
-      text-align: right;
     }
 
     #title {
@@ -261,6 +61,16 @@
       margin-right: 5px;
       filter: invert(11%) sepia(42%) saturate(2954%) hue-rotate(226deg) brightness(97%) contrast(94%);
       transition: filter 200ms ease;
+    }
+
+    .menu a {
+      color: white;
+      opacity: 0.6;
+      transition: 200ms ease;
+    }
+
+    .menu a:hover, .menu a:focus {
+      opacity: 1;
     }
 
     .menu-icon {
@@ -1794,7 +1604,7 @@
       opacity: 1;
     }
 
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
       .base, .layer {
         justify-content: center;
       }
@@ -2348,13 +2158,6 @@
     .info-inner span,
     .info-inner-lg span {
       flex-grow: 1;
-    }
-
-    .title {
-      font-weight: 600;
-      text-align: left;
-      display: inline-block;
-      margin-right: 5px;
     }
 
     #music-container .title {

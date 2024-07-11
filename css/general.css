@@ -1,0 +1,343 @@
+/** General CSS - this applies to all pages and contains things like default fonts and repeated boxes **/
+
+    @import url("https://use.fontawesome.com/releases/v5.0.9/css/all.css");
+    @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Sedan:ital@0;1&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Quintessential&family=Satisfy&family=Sriracha&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+    html {
+      font-family: "Dosis", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.02em;
+      background: url(../img/layout/main-background.jpg) left top / 350px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: #213353;
+      transition: 150ms ease;
+    }
+
+    a:hover,
+    a:focus {
+      color: #30598c;
+    }
+
+    a.tab-nav-link:hover, a.tab-nav-link:focus {
+      color: #aec4e8;
+    }
+
+    b, strong {
+        font-weight: 600;
+    }
+
+    ul {
+    	padding: 0;
+    	margin: 0;
+    }
+
+    ul li {
+    	list-style: none;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px dashed #aec4e8;
+    }
+
+    details {
+      overflow: hidden; /* Keep this line to prevent an odd blue outline around the element in Safari. */
+      transition: 300ms ease;
+    }
+
+    div.details-body { 
+     max-height: 0;
+     overflow: hidden;
+     opacity: 0;
+     transition: 300ms ease;
+    }
+
+    details[open] + div.details-body {
+     max-height: 500px; /* Set a max-height value enough to show all the content */ 
+     border-color: #888;
+     opacity: 1;
+    }
+
+    details summary::-webkit-details-marker {
+      display:none;
+    }
+
+    details > summary, details[open] > summary {
+        list-style-type: none;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    details > summary:after {
+        border: 1px solid #242460;
+        background: #bcd4ff;
+        content: '✖';
+        font-family: sans-serif;
+        font-size: 13px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        transform: rotate(45deg);
+        transition: 200ms ease;
+    }
+
+    details > summary:hover:after {
+      background: #8cb2f5;
+    }
+
+    details[open] > summary:after {
+      transform: rotate(0turn);
+    }
+
+    button {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      color: inherit;
+      cursor: pointer;
+      background: none;
+    }
+
+    /* Headers */
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    h1, h2 {
+      font-family: "Averia Serif Libre", serif;
+      margin: 5px 0;
+    }
+
+    h3, h4 {
+      font-family: "Piazzolla", serif;
+      margin: 0 0 10px;
+    }
+
+    h4 {
+      font-size: 110%;
+      font-weight: 500;
+    }
+
+    .text-container h4, .sticky-box h4 {
+      margin: -5px 0 5px;
+    }
+
+    .text-container h4 {
+      display: flex;
+      align-items: center;
+    }
+
+    .text-container h4 i {
+      margin-right: 5px;
+    }
+
+    .outfit-checkbox-container h4 {
+      font-size: 100%;
+      margin: 0 0 5px;
+    }
+
+    /* Containers & General Body Modifiers */
+
+    .subtitle {
+      font-size: 90%;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rounded-image {
+      border-radius: 12px;
+    }
+
+    .title {
+      font-weight: 600;
+      text-align: left;
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    /* Audio */
+
+    audio::-webkit-media-controls-panel {
+      background-color: #4268b7;
+      border-color: #4268b7;
+      color: black;
+      padding: 0;
+      overflow: visible;
+    }
+
+    audio::-webkit-media-controls-play-button {
+      background-color: #588cf1;
+      border-radius: 100%;
+    }
+
+    audio::-webkit-media-controls-play-button:hover,
+    audio::-webkit-media-controls-play-button:focus {
+      background-color: #6197ff;
+      transition: 300ms ease;
+    }
+
+    audio::-webkit-media-controls-current-time-display,
+    audio::-webkit-media-controls-time-remaining-display {
+      color: black;
+      text-shadow: none;
+      font-family: "Dosis";
+    }
+
+    audio {
+      width: calc(100% - 20px);
+      height: 40px;
+      margin: 7px 10px 7px 0;
+      border-radius: 10px;
+    }
+
+    /* Archive Page Specific */
+
+    #home p {
+    	margin: 5px 0;
+    }
+
+    .main-page-flex {
+    	display: flex;
+    	align-self: center;
+	    width: 98%;
+    	height: calc(var(--vh, 1vh) * 100 - 90px);
+    }
+
+    .character-profiles {
+    	max-height: 100%;
+    	overflow: scroll;
+    }
+
+    .character-profile {
+    	display: flex;
+    	background: linear-gradient(15deg, #ddcaab, #f9eedc);
+    	margin: 5px;
+    	border-radius: 6px;
+    	overflow: hidden;
+    	align-items: center;
+    	padding: 10px;
+    	position: relative;
+    	border: 1px solid #53390e;
+    }
+
+    .character-profile a {
+    	padding: 5px 10px;
+    	margin: 5px;
+    	border-radius: 4px;
+    	background: red;
+    	position: absolute;
+	    bottom: 0;
+	    right: 0;
+    }
+
+	.character-profile img {
+		width: 150px;
+		background: blue;
+		border-radius: 6px;
+		border: 2px inset #53390e;
+	}
+
+	.character-profile ul {
+		padding: 10px;
+		min-width: 200px;
+		text-align: center;
+	}
+
+	.character-profile .title {
+		font-size: 125%;
+	}
+
+	#character-carousel {
+		width: calc(100% - 400px);
+		background: black;
+		margin: 5px 5px 0;
+		border-radius: 6px;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    overflow: hidden;
+	    position: relative;
+	    max-height: 100%;
+	    border: 30px solid transparent;
+    	border-image: url(../img/layout/wood-border.png) 35%;
+	}
+
+
+	#character-carousel img {
+    	min-height: 100%;
+    	min-width: 100%;
+    	object-fit: cover;
+	    transition: opacity 600ms ease;
+	}
+
+	.dot-container {
+		position: absolute;
+		margin: 10px auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+		bottom: 0;
+	}
+
+	.dot {
+	  color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: 0.6s ease;
+	}
+
+	.dot.active {
+	  color: #717171;
+	}
+
+	@media (max-width: 800px), (max-width: 940px) and (max-height: 450px) {
+
+		.main-page-flex {
+			flex-direction: column;
+			height: auto;
+		}
+
+		#character-carousel {
+			height: 40vh;
+			width: calc(100% - 10px);
+		}
+	}
+
