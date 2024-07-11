@@ -28,7 +28,7 @@
   <div id="character-carousel">
     <img src="img/general/mainimage.jpg">
     <img src="img/general/frolickin.png">
-    <img src="img/friendstars.jpg">
+    <img src="img/general/friendstars.jpg">
 
   <div class="dot-container">
     <i class="fa-solid fa-star dot" onclick="currentSlide(1)"></i>
@@ -110,7 +110,7 @@
         slides[slideIndex-1].style.opacity = "1";
         slides[slideIndex-1].style.minWidth = "100%";  
         dots[slideIndex-1].className += " active";
-        setTimeout(slideAuto, 4000); // Change image every 2 seconds
+        myTimer = setTimeout(slideAuto, 4000); // Change image every 2 seconds
       }
 </script>
 
@@ -143,6 +143,12 @@
     slides[selectedSlide-1].style.opacity = "1";
     slides[selectedSlide-1].style.minWidth = "100%";   
     dots[selectedSlide-1].className += " active";
+
+    // in your click function, call clearTimeout
+    window.clearTimeout(myTimer);
+
+    // then call setTimeout again to reset the timer
+    myTimer = window.setTimeout(slideAuto, 4000);
   }
 </script>
 
