@@ -294,7 +294,7 @@
     }
 
     .main-image {
-      background: radial-gradient(circle farthest-corner at center top, rgba(255, 255, 255, 0) 60%, rgba(20, 20, 60, 1) 95%), radial-gradient(circle farthest-corner at 45% top, rgba(255, 255, 255, 0) 35%, rgb(15 84 231) 100%), url(https://flyteckscharactersheets.cfw.me/files/mainimage.jpg);
+      background: radial-gradient(circle farthest-corner at center top, rgba(255, 255, 255, 0) 60%, rgba(20, 20, 60, 1) 95%), radial-gradient(circle farthest-corner at 45% top, rgba(255, 255, 255, 0) 35%, rgb(15 84 231) 100%), url(../img/general/mainimage.jpg);
       height: 100vh;
       width: 100%;
       position: absolute;
@@ -2014,7 +2014,7 @@
     }
 
     .tab-background {
-      background: linear-gradient(180deg, rgb(4 10 22 / 60%) 0, rgb(3 18 49 / 60%) 100%), url(https://flyteck.cfw.me/files/41_floral_wallpaper_texture-seamless.jpg) left top / 350px;
+      background: linear-gradient(180deg, rgb(4 10 22 / 60%) 0, rgb(3 18 49 / 60%) 100%), url(../img/layout/tab-background.jpg) left top / 350px;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
