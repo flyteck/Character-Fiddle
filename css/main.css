@@ -1957,6 +1957,8 @@
      .main-page-column-2 h1 { 
         min-width: max-content;
         margin-right: 10px;
+        text-shadow: 0 -1.5px 0.5px #14143c, 0 1px 1px #aec4e8;
+        color: #242460;
      }
 
     .general-title-bar .tagline {
