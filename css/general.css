@@ -234,11 +234,22 @@
     	margin: 5px 0;
     }
 
+    #home .title-flex {
+      display: flex;
+      justify-content: space-between;
+      align-self: stretch;
+      margin: 10px 20px;
+      align-items: center;
+      background: linear-gradient(15deg, #ddcaab, #f9eedc);
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+
     .main-page-flex {
     	display: flex;
     	align-self: center;
 	    width: 98%;
-    	height: calc(var(--vh, 1vh) * 100 - 90px);
+    	height: calc(var(--vh, 1vh) * 100 - 96px);
     }
 
     .character-profiles {
