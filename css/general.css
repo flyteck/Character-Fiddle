@@ -338,7 +338,7 @@
 		#character-carousel {
 			height: 40vh;
 			border-width: 20px;
-			width: calc(100% - 70px);
+			width: calc(100% - 50px);
 		}
 	}
 
