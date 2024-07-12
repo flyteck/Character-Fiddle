@@ -13,6 +13,7 @@
     }
 
     body {
+      color: #372207;
       margin: 0;
       display: flex;
       flex-direction: column;
