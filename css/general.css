@@ -166,6 +166,10 @@
 
     /* Containers & General Body Modifiers */
 
+    .clear {
+      clear:both;
+    }
+
     .subtitle {
       font-size: 90%;
     }
