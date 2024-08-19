@@ -1,0 +1,264 @@
+html {
+	background: #09111D;
+}
+
+body {
+	color: #14143c;
+	background: linear-gradient(180deg, rgba(15, 13, 17, 0) 80vh, rgb(0 0 0) 100vh, rgb(0 0 0) 120vh, rgba(15, 13, 17, 0) 250vh);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#title {
+	padding: 20px 10px;
+	color: #4379f8;
+	background: -webkit-linear-gradient(#5b93ff, #074ad7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/** Main Image **/
+
+.main-image {
+	background: radial-gradient(circle farthest-corner at center top, rgba(255, 255, 255, 0) 60%, rgba(20, 20, 60, 1) 95%), radial-gradient(circle farthest-corner at 45% top, rgba(255, 255, 255, 0) 35%, rgb(15 84 231) 100%), url(../img/general/mainimage.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+@media (max-aspect-ratio: 229/158) {
+	.main-image {
+      background-size: auto 100vh;
+    }
+}
+
+@media (max-aspect-ratio: 625/790) {
+	.main-image {
+      background-position: 25% top;
+    }
+
+    .title-flex {
+    	bottom: 15%;
+        top: auto;
+        right: auto;
+        left: 2%;
+      }
+}
+
+/** /Main Image **/
+
+.general-container, .relationship-container {
+      background: linear-gradient(15deg, #5d7aa2, #8da2c9);
+      border: 1px solid black;
+      border-bottom: 2px solid black;
+}
+
+.trivia-blurb .fa-solid:after {
+	content: "\f005";
+	color: #f1f5ff;
+	filter: drop-shadow(-1px 1px 0 #8cb2f5) drop-shadow(1px 1px 0 #8cb2f5);
+}
+
+.trivia-blurb {
+	border-color: #32476D;
+	background: linear-gradient(90deg, #648DC0 30px, #e4e8f7 30px, #f1f5ff);
+	box-shadow: rgba(20, 20, 60, 0.3) 0px 4px 3px, rgba(20, 20, 60, 0.2) 0px -2px 0px inset;
+}
+
+.skills, .saves, .proficiency-bonus {
+	background: #f1f5ff;
+	border-top: 1px solid #f1f5ff;
+	border-bottom: 2px solid #445676;
+}
+
+.dnd-image {
+	background: url(https://flyteckscharactersheets.cfw.me/files/spookmini.png) center / contain no-repeat;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #14143c;
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.dnd-stat-container {
+	background: linear-gradient(-15deg, #cad3e7, #f1f5ff);
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #7f98c6;
+	box-shadow: rgba(20, 20, 60, 0.3) 0px 2px 4px, rgba(20, 20, 60, 0.2) 0px 1px 7px -3px, rgba(20, 20, 60, 0.2) 0px -1px 0px inset;
+}
+
+.dnd-stat-container .value {
+	background: linear-gradient(#819ac7, #6982b1);
+	color: white;
+	border-top: 1px solid #d8e6ff;
+	border-bottom: 1px solid #151a24;
+	box-shadow: rgba(20, 20, 60, 0.3) 0px 2px 4px, rgba(20, 20, 60, 0.2) 0px 1px 7px -3px, rgba(20, 20, 60, 0.2) 0px -1px 0px inset;
+}
+
+.dnd-button-bar button {
+	background: #14143c;
+	color: white;
+	border-top: 1px solid #4268b7;
+	border-bottom: 1px solid #000000;
+}
+
+.dnd-button-bar button:hover, .dnd-button-bar button:focus {
+	background: #5e7296;
+}
+
+.dnd-button-bar button.activebtn, .dnd-button-bar button.activebtn {
+	background: #3da7fe;
+	color: #14143c;
+}
+
+.dnd-button-bar button.inactive:hover, .dnd-button-bar button.inactive:focus {
+	background: #14143c;
+}
+
+.spell-link {
+      background: #d5e0f7;
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #9aaac6;
+    }
+
+.spell-link:hover, .spell-link:focus {
+	background: #bcd4ff;
+}
+
+.save-and-attack div {
+      background: linear-gradient(15deg, #aec4e8, #d5e0f7);
+      border-top: 1px solid #f1f5ff;
+      border-bottom: 2px solid #445676;
+}
+
+.dnd-ability {
+    border: 1px solid #7f98c6;
+    background: linear-gradient(15deg, #e4e8f7, #f1f5ff);
+ }
+
+ .material-component {
+      background: #f1f5ff;
+ }
+
+ .at-higher-levels hr {
+      background: linear-gradient(15deg, #242460, transparent);
+ } 
+
+ .song-container {
+      background: #6197ff;
+}
+
+.comic-wrapper {
+      background: #d6dcee;
+      color: #14143c;
+      border-top: 1px solid #f1f5ff;
+      border-bottom: 2px solid #445676;
+      box-shadow: rgba(20, 20, 60, 0.3) 0px 2px 4px, rgba(20, 20, 60, 0.2) 0px 1px 7px -3px, rgba(20, 20, 60, 0.2) 0px -1px 0px inset;
+}
+
+.comic-wrapper:hover, .comic-wrapper:focus {
+      background: #d2e2ff;
+}
+
+.comic-wrapper img {
+     background-color: #070721;
+}
+
+.photo-wrapper.reference:after {
+      background: #e9e9e9;
+      color: #14143c;
+}
+
+.photo-title-bar, .photo-footer-bar {
+    background: #f1f5ff;
+}
+
+.dressup-container {
+    background: url(https://flyteckscharactersheets.cfw.me/files/dots.png) center / 300px, linear-gradient(180deg, #b3c2dd 0, #3a3f55 100%);
+    border: 1px solid #7890b9;
+    box-shadow: rgb(59 60 74) 3px 3px 6px 0px inset, rgb(45 45 65 / 25%) -3px -3px 6px 1px inset;
+    border-top: 2px solid #6984ab;
+    border-bottom: 2px solid #8da2c9;
+}
+
+.outfit-scroll-wrapper {
+      background: #d6dcee;
+      border-top: 1px solid #d8e6ff;
+      border-bottom: 1px solid #5e7296;
+}
+
+.hairstyle-rec img {
+      background: url(https://flyteckscharactersheets.cfw.me/files/icons/bluestar.png) center/contain no-repeat;
+}
+
+.outfit-checkbox-container {
+      background: #d5e0f7;
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #7f98c6;
+}
+
+.sticky-box {
+    background: #b2c6e8;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid #aec4e8;
+}
+
+.clothing-checkbox-container {
+      background: #f1f5ff;
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #7f98c6;
+}
+
+.palette-button {
+      background-color: #bcd4ff;
+      border: 1px solid #242460;
+      background: #bcd4ff url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconscharacter.png) center center / 35px no-repeat;
+}
+
+#outfit-button {
+      background: #bcd4ff url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconsclothes.png) center center / 35px no-repeat;
+}
+
+.outfit-toggle, .front-back-toggle {
+      background: #acc9ff;
+      border-top: 1px solid #f1f5ff;
+      border-bottom: 1px solid #445676;
+}
+
+.tab-background {
+      background: linear-gradient(180deg, rgb(4 10 22 / 60%) 0, rgb(3 18 49 / 60%) 100%), url(../img/layout/tab-background.jpg) left top / 350px;
+      border-color: #495469;
+      box-shadow: 0 15px 25px black;
+}
+
+.character-image-box {
+      background-image: url(https://f2.toyhou.se/file/f2-toyhou-se/images/61006574_MoRD7AFAYOo4ANU.png?1692976893);
+}
+
+.details-content.active, .relationship-content.active {
+	background: linear-gradient(15deg, #b2c3de, #dae4f9);
+    border-top: 1px solid #f1f5ff;
+    border-bottom: 2px solid #445676;
+}
+
+.general-title-bar {
+    background: linear-gradient(15deg, #7f96bd, #8ca1c8);
+    border-bottom: 1px dashed #aec4e8;
+}
+
+.outfit-scroll-wrapper::-webkit-scrollbar-thumb  {
+      background: linear-gradient(45deg, #8cb2f5 25%, #f1f5ff 25.5%, #f1f5ff 50%, #8cb2f5 50.5%, #8cb2f5 75%, #f1f5ff 75.5%, #f1f5ff) center/10px;
+      background-size: 20px 20px;
+}
+
+@media (max-width: 700px) {
+
+	.tab-one-container {
+	        background: linear-gradient(15deg, #aec4e8, #d5e0f7);
+	        border-top: 1px solid #f1f5ff;
+	        border-bottom: 2px solid #445676;
+	}
+
+	.tab-six-container {
+	        background: linear-gradient(15deg, #aec4e8, #d5e0f7);
+	}
+}

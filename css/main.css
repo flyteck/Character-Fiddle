@@ -1,22 +1,5 @@
-    html {
-      background: #09111D;
-    }
-
-     body {
-      color: #14143c;
-      background: linear-gradient(180deg, rgba(15, 13, 17, 0) 80vh, rgb(0 0 0) 100vh, rgb(0 0 0) 120vh, rgba(15, 13, 17, 0) 250vh);
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      background-position: center top;
-    }
-
     #title {
-      padding: 20px 10px;
       font-family: "Piazzolla", serif;
-      color: #4379f8;
-      background: -webkit-linear-gradient(#5b93ff, #074ad7);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
 
     #friend #title {
@@ -113,23 +96,14 @@
     }
 
     .main-image {
-      background: radial-gradient(circle farthest-corner at center top, rgba(255, 255, 255, 0) 60%, rgba(20, 20, 60, 1) 95%), radial-gradient(circle farthest-corner at 45% top, rgba(255, 255, 255, 0) 35%, rgb(15 84 231) 100%), url(../img/general/mainimage.jpg);
       height: 100vh;
       width: 100%;
       position: absolute;
       top: 0;
       left: 0;
       z-index: -1;
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      background-position: center top;
       animation-name: fade;
       animation-duration: 1s;
-    }
-
-    #friend {
-      margin: 0;
-      border-color: red;
     }
 
     #friend .main-image {
@@ -242,7 +216,7 @@
       left: 0;
     }
 
-    /******************* Loader *****************/
+    /******************* Loader (removed)
 
       .loader-wrapper {
         font-weight: 600;
@@ -275,6 +249,8 @@
         60% {background-position: 0% 100%,50% 0%  ,100% 50% }
         80% {background-position: 0% 100%,50% 100%,100% 0%  }
       }
+
+      *****************/
 
 
     /******************* Personality & Backstory *********************/
@@ -328,8 +304,6 @@
       position: absolute;
       top: 2px;
       left: 0;
-      color: #f1f5ff;
-      filter: drop-shadow(-1px 1px 0 #8cb2f5) drop-shadow(1px 1px 0 #8cb2f5);
     }
 
     .trivia-blurb {
@@ -340,7 +314,6 @@
       border: 1px solid #32476D;
       margin: 5px;
       border-radius: 12px;
-      background: linear-gradient(90deg, #648DC0 30px, #e4e8f7 30px, #f1f5ff);
       box-shadow: rgba(20, 20, 60, 0.3) 0px 4px 3px, rgba(20, 20, 60, 0.2) 0px -2px 0px inset;
     }
 
@@ -384,9 +357,6 @@
     }
 
     .skills, .saves, .proficiency-bonus {
-      background: #f1f5ff;
-      border-top: 1px solid #f1f5ff;
-      border-bottom: 2px solid #445676;
       border-radius: 10px;
     }
 
@@ -477,10 +447,10 @@
 
     .dnd-image {
       align-self: center;
-      background: url(https://flyteckscharactersheets.cfw.me/files/spookmini.png) center / contain no-repeat;
+      background: black;
       border-radius: 100%;
-      border-top: 1px solid #ffffff;
-      border-bottom: 1px solid #14143c;
+      border-top: 1px solid white;
+      border-bottom: 1px solid grey;
       width: 100%;
       max-width: 20vh;
       box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -1903,7 +1873,7 @@
     }
 
     .tab-background {
-      background: linear-gradient(180deg, rgb(4 10 22 / 60%) 0, rgb(3 18 49 / 60%) 100%), url(../img/layout/tab-background.jpg) left top / 350px;
+      background: grey;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
@@ -2019,7 +1989,7 @@
       justify-content: space-between;
       position: sticky;
       top: 0;
-      background: linear-gradient(15deg, #7f96bd, #8ca1c8);
+      background: grey;
       border-bottom: 1px dashed #aec4e8;
       padding: 10px 0 5px;
       margin: 0 0 5px;
