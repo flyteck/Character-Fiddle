@@ -118,6 +118,11 @@
       animation-duration: 1s;
     }
 
+    #friend {
+      margin: 0;
+      border-color: red;
+    }
+
     #friend .main-image {
       background: radial-gradient(circle farthest-corner at center top, rgba(255, 255, 255, 0) 80%, rgb(17 5 120) 100%), radial-gradient(circle farthest-corner at 45% top, rgba(255, 255, 255, 0) 45%, rgb(112 93 218 / 50%) 100%), url(https://flyteckscharactersheets.cfw.me/files/displayimagetestfriend.jpg);
       height: 100vh;
