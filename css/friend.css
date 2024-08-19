@@ -141,6 +141,11 @@ a:hover, a:focus {
 	border-color: #EFECFF;
 }
 
+.main-page-column-2 h1 {
+    color: #3f3f95;
+    text-shadow: 0 -1.5px 0.5px #14143c, 0 1px 1px white;
+}
+
 .dnd-image {
 	background: url(https://flyteckscharactersheets.cfw.me/files/spookmini.png) center / contain no-repeat;
 	border-top: 1px solid #ffffff;
@@ -306,9 +311,17 @@ a:hover, a:focus {
     color: #efedff;
 }
 
-.outfit-toggle:hover, .outfit-toggle:focus, .front-back-toggle:hover, .front-back-toggle:focus {
-	background: #4e51e1;
-	border-bottom: 1px solid #2d3266;
+.outfit-toggle:hover, .outfit-toggle:focus, .front-back-toggle:hover, .front-back-toggle:focus, .palette-button:hover, .palette-button:focus, #outfit-button:hover, #outfit-button:focus {
+      background-color: #6063f2;
+      border-bottom: 1px solid #2d3266;
+}
+
+.outfit-toggle:active, .front-back-toggle:active, .palette-button:active, #outfit-button:active {
+	background-color: #4e51e1;
+      border-color: #d6dcee;
+      border-top: 2px solid transparent;
+      border-bottom: none;
+      background-clip: padding-box;
 }
 
 .tab-background {
@@ -333,7 +346,7 @@ a:hover, a:focus {
 }
 
 .outfit-scroll-wrapper::-webkit-scrollbar-thumb  {
-      background: linear-gradient(45deg, #8cb2f5 25%, #f2f3ff 25.5%, #f2f3ff 50%, #8cb2f5 50.5%, #8cb2f5 75%, #f2f3ff 75.5%, #f2f3ff) center/10px;
+      background: linear-gradient(45deg, #848ded 25%, #f2f3ff 25.5%, #f2f3ff 50%, #848ded 50.5%, #848ded 75%, #f2f3ff 75.5%, #f2f3ff) center/10px;
       background-size: 20px 20px;
 }
 
