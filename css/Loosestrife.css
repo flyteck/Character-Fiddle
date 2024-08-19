@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	color: #2e1a93;
+	color: #2d270e;
 	background: linear-gradient(180deg, rgba(15, 13, 17, 0) 80vh, rgb(0 0 0) 100vh, rgb(0 0 0) 120vh, rgba(15, 13, 17, 0) 250vh);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -11,11 +11,11 @@ body {
 }
 
 a {
-    color: #6a29d6;
+    color: #474b21;
 }
 
 a:hover, a:focus {
-    color: #bd1647;
+    color: #bf0bc5;
 }
 
 #title {
@@ -85,73 +85,83 @@ a:hover, a:focus {
 /** /Main Image **/
 
 #tabbar, #tabbar button {
-	background-color: #848eed;
+	background-color: #42352f;
+    color: #88754e;
 }
 
 #tabbar button:hover, #tabbar button:focus {
-	background-color: #3c3788;
-	color: #e65783;
+	background-color: #391d47;
+    color: #e4e2cd;
 }
 
 #tabbar button.activebtn {
-	background-color: #e65783;
-	color: white;
+    background-color: #e4e2cd;
+    color: #e108e1;
 }
 
 .text-container, .info-inner, .info-inner-lg, .personality-trait-container {
-	background-color: #f2f3ff;
-      border-top: 1px solid #ffffff;
-      border-bottom: 1px solid #7c5cc0;
+	background-color: #e4e2cd;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #7c5cc0;
 }
 
 .personality-trait {
-    background-color: #f2f3ff;
+    background-color: #e4e2cd;
 }
 
 .general-container, .relationship-container {
-      background: linear-gradient(15deg, #8aa4e0, #c8cafa);
-      border: 1px solid black;
-      border-bottom: 2px solid black;
+    background: linear-gradient(15deg, #574845, #81765d);
+    border: 1px solid #b947c4;
+    border-bottom: 2px solid #740d7c;
 }
 
 .tab-content.active::-webkit-scrollbar-thumb, .main-body-one::-webkit-scrollbar-thumb, .relationship-bar::-webkit-scrollbar-thumb, .main-page-column-2::-webkit-scrollbar-thumb  {
-      background-color: #848eed;
+      background-color: #f6ffc2;
+      border: 1px solid #b947c4;
+      border-radius: 4px;
+    }
+
+.tab-content.active::-webkit-scrollbar-track, .text-container::-webkit-scrollbar-track, .relationship-bar::-webkit-scrollbar-track,
+.main-page-column-2::-webkit-scrollbar-track, .main-body-one::-webkit-scrollbar-track {
+    background-color: black;
+    border-radius: 4px;
 }
 
 .progress-lower {
-	background-color: #34326d;
-	color: #a7aefa;
+	background-color: #42352e;
+    color: #b39860;
 }
 
 .progress-higher {
-    background-color: #848ded;
+    background-color: #87754d;
+    color: white;
 }
 
 .trivia-blurb .fa-solid:after {
 	content: "\f005";
-	color: #f2f3ff;
+	color: #e4e2cd;
 	filter: drop-shadow(-1px 1px 0 #8cb2f5) drop-shadow(1px 1px 0 #8cb2f5);
 }
 
 .trivia-blurb {
 	border-color: #2e1a93;
-	background: linear-gradient(90deg, #848ded 30px, #e4e8f7 30px, #f2f3ff);
+	background: linear-gradient(90deg, #848ded 30px, #e4e8f7 30px, #e4e2cd);
 	box-shadow: rgba(20, 20, 60, 0.3) 0px 4px 3px, rgba(20, 20, 60, 0.2) 0px -2px 0px inset;
 }
 
 .skills, .saves, .proficiency-bonus {
-	background: #f2f3ff;
-	border-top: 1px solid #f2f3ff;
+	background: #e4e2cd;
+	border-top: 1px solid #e4e2cd;
 	border-bottom: 2px solid #445676;
 }
 
 .icon-and-stats, .main-page-column-1 {
-	border-color: #EFECFF;
+	border-color: #c4bcae;
 }
 
 .main-page-column-2 h1 {
-    color: #3f3f95;
-    text-shadow: 0 -1.5px 0.5px #14143c, 0 1px 1px white;
+    color: #363920;
+    text-shadow: 0 -1.5px 0.5px #14143c, 0 1px 1px #a89a87;
 }
 
 .dnd-image {
@@ -162,14 +172,14 @@ a:hover, a:focus {
 }
 
 .dnd-stat-container {
-	background: linear-gradient(-15deg, #cad3e7, #f2f3ff);
+	background: linear-gradient(-15deg, #cad3e7, #e4e2cd);
 	border-top: 2px solid #ffffff;
 	border-bottom: 2px solid #7f98c6;
 	box-shadow: rgba(20, 20, 60, 0.3) 0px 2px 4px, rgba(20, 20, 60, 0.2) 0px 1px 7px -3px, rgba(20, 20, 60, 0.2) 0px -1px 0px inset;
 }
 
 .dnd-stat-container .value {
-	background: linear-gradient(#12196e, #505196);
+	background: linear-gradient(#819ac7, #6982b1);
 	color: white;
 	border-top: 1px solid #d8e6ff;
 	border-bottom: 1px solid #151a24;
@@ -177,19 +187,19 @@ a:hover, a:focus {
 }
 
 .dnd-button-bar button {
-	background: #171d71;
+	background: #14143c;
 	color: white;
 	border-top: 1px solid #4268b7;
 	border-bottom: 1px solid #000000;
 }
 
 .dnd-button-bar button:hover, .dnd-button-bar button:focus {
-	background: #848fed;
+	background: #5e7296;
 }
 
 .dnd-button-bar button.activebtn, .dnd-button-bar button.activebtn {
-	background: #e65783;
-	color: #7d0c39;
+	background: #3da7fe;
+	color: #14143c;
 }
 
 .dnd-button-bar button.inactive:hover, .dnd-button-bar button.inactive:focus {
@@ -197,43 +207,28 @@ a:hover, a:focus {
 }
 
 .spell-link {
-      background: #c3ccf6;
+      background: #d5e0f7;
       border-top: 1px solid #ffffff;
       border-bottom: 1px solid #9aaac6;
-      position: relative;
-}
-
-.spell-link i {
-	z-index: 1;
-}
-
-.spell-link:after {
-	content:"";
-	background: linear-gradient(15deg, transparent, #d9e7ff);
-	width: 100%;
-	height:100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+    }
 
 .spell-link:hover, .spell-link:focus {
 	background: #bcd4ff;
 }
 
 .save-and-attack div {
-      background: linear-gradient(15deg, #efedff, #d5e0f7);
-      border-top: 1px solid #f2f3ff;
+      background: linear-gradient(15deg, #c4bcae, #d5e0f7);
+      border-top: 1px solid #e4e2cd;
       border-bottom: 2px solid #445676;
 }
 
 .dnd-ability {
     border: 1px solid #7f98c6;
-    background: linear-gradient(15deg, #e4e8f7, #f2f3ff);
+    background: linear-gradient(15deg, #e4e8f7, #e4e2cd);
  }
 
  .material-component {
-      background: #f2f3ff;
+      background: #e4e2cd;
  }
 
  .at-higher-levels hr {
@@ -247,7 +242,7 @@ a:hover, a:focus {
 .comic-wrapper {
       background: #d6dcee;
       color: #14143c;
-      border-top: 1px solid #f2f3ff;
+      border-top: 1px solid #e4e2cd;
       border-bottom: 2px solid #445676;
       box-shadow: rgba(20, 20, 60, 0.3) 0px 2px 4px, rgba(20, 20, 60, 0.2) 0px 1px 7px -3px, rgba(20, 20, 60, 0.2) 0px -1px 0px inset;
 }
@@ -266,7 +261,7 @@ a:hover, a:focus {
 }
 
 .photo-title-bar, .photo-footer-bar {
-    background: #f2f3ff;
+    background: #e4e2cd;
 }
 
 .dressup-container {
@@ -295,13 +290,13 @@ a:hover, a:focus {
 
 .sticky-box {
     background: #848ded;
-    color: #efedff;
+    color: #c4bcae;
     border-radius: 6px 6px 0 0;
-    border-bottom: 1px solid #efedff;
+    border-bottom: 1px solid #c4bcae;
 }
 
 .clothing-checkbox-container {
-      background-color: #f2f3ff;
+      background-color: #e4e2cd;
       border-top: 1px solid #ffffff;
       border-bottom: 1px solid #848ded;
 }
@@ -329,9 +324,9 @@ a:hover, a:focus {
 
 .outfit-toggle, .front-back-toggle {
     background: #848ded;
-    border-top: 1px solid #efedff;
+    border-top: 1px solid #c4bcae;
     border-bottom: 1px solid #4e51e1;
-    color: #efedff;
+    color: #c4bcae;
 }
 
 .outfit-toggle:hover, .outfit-toggle:focus, .front-back-toggle:hover, .front-back-toggle:focus, .palette-button:hover, .palette-button:focus, #outfit-button:hover, #outfit-button:focus {
@@ -348,9 +343,9 @@ a:hover, a:focus {
 }
 
 .tab-background {
-      background: linear-gradient(180deg, rgb(25 13 161 / 43%) 0, rgb(186 156 238 / 49%) 100%), url(../img/layout/starsbg.jpeg) left top / 350px;
-    	border-color: #848ded;
-      box-shadow: 0 15px 25px black;
+    background: linear-gradient(180deg, rgb(37 16 31 / 69%) 0, rgb(13 6 25 / 71%) 100%), url(../img/layout/tab-background-loosestrife.jpg) left top / 350px;
+    border-color: #6d5146;
+    box-shadow: 0 15px 25px black;
 }
 
 .character-image-box {
@@ -358,30 +353,30 @@ a:hover, a:focus {
 }
 
 .details-content.active, .relationship-content.active {
-	background: linear-gradient(15deg, #c3ccf6, #d9e7ff);
-    	border-top: 1px solid #f2f3ff;
-    	border-bottom: 2px solid #445676;
+	background: linear-gradient(15deg, #b2c3de, #dae4f9);
+    border-top: 1px solid #e4e2cd;
+    border-bottom: 2px solid #445676;
 }
 
 .general-title-bar {
-    background: linear-gradient(15deg, #b5bef2, #c7c9fa);
-    border-bottom: 1px dashed #efedff;
+    background: linear-gradient(15deg, #756956, #80755d);
+    border-bottom: 1px dashed #c4bcae;
 }
 
 .outfit-scroll-wrapper::-webkit-scrollbar-thumb  {
-      background: linear-gradient(45deg, #848ded 25%, #f2f3ff 25.5%, #f2f3ff 50%, #848ded 50.5%, #848ded 75%, #f2f3ff 75.5%, #f2f3ff) center/10px;
+      background: linear-gradient(45deg, #848ded 25%, #e4e2cd 25.5%, #e4e2cd 50%, #848ded 50.5%, #848ded 75%, #e4e2cd 75.5%, #e4e2cd) center/10px;
       background-size: 20px 20px;
 }
 
 @media (max-width: 700px) {
 
 	.tab-one-container {
-	        background: linear-gradient(15deg, #efedff, #d5e0f7);
-	        border-top: 1px solid #f2f3ff;
+	        background: linear-gradient(15deg, #c4bcae, #d5e0f7);
+	        border-top: 1px solid #e4e2cd;
 	        border-bottom: 2px solid #445676;
 	}
 
 	.tab-six-container {
-	        background: linear-gradient(15deg, #efedff, #d5e0f7);
+	        background: linear-gradient(15deg, #c4bcae, #d5e0f7);
 	}
 }
