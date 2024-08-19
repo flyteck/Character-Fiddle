@@ -2029,6 +2029,11 @@
       font-size: 1em;
     }
 
+    #friend .tagline {
+      font-size: 90%;
+      font-family: "Edu QLD Beginner", serif;
+    }
+
     .relationship-content.active {
       display: flex;
       flex-direction: column;
