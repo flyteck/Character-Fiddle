@@ -325,8 +325,8 @@ a:hover, a:focus {
 }
 
 .tab-background {
-      background: linear-gradient(180deg, rgb(4 10 22 / 60%) 0, rgb(3 18 49 / 60%) 100%), url(../img/layout/tab-background.jpg) left top / 350px;
-      border-color: #495469;
+      background: linear-gradient(180deg, rgb(25 13 161 / 43%) 0, rgb(186 156 238 / 49%) 100%), url(../img/layout/starsbg.jpeg) left top / 350px;
+    	border-color: #848ded;
       box-shadow: 0 15px 25px black;
 }
 
