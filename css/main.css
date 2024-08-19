@@ -19,6 +19,15 @@
       -webkit-text-fill-color: transparent;
     }
 
+    #friend #title {
+      color: #e0d7ff;
+      background: -webkit-linear-gradient(#e0d7ff, #6b76da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px #a397cb99;
+      mix-blend-mode: plus-lighter;
+    }
+
     #title h1 {
       font-family: "Satisfy", serif;
       white-space: nowrap;
@@ -2030,9 +2039,15 @@
     }
 
     #friend .tagline {
-      font-size: 90%;
-      font-family: "Edu QLD Beginner", serif;
+      margin: 0;
     }
+
+    .credit {
+      font-size: 80%;
+      margin: 10px;
+      width: 100%;
+      text-align: right;
+  }
 
     .relationship-content.active {
       display: flex;
