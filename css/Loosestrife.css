@@ -15,7 +15,7 @@ a {
 }
 
 a:hover, a:focus {
-    color: #bf0bc5;
+    color: #e108e1;
 }
 
 hr {
@@ -110,7 +110,7 @@ h1, h2, h3, h4 {
 .text-container, .info-inner, .info-inner-lg, .personality-trait-container {
 	background-color: #e4e2cd;
     border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #7c5cc0;
+    border-bottom: 1px solid #7d7f2f;
 }
 
 .personality-trait {
@@ -126,6 +126,29 @@ h1, h2, h3, h4 {
 
 .general-info-image {
     width: 280px;
+}
+
+.hearts-container {
+    background-color: #c4bcae;
+}
+
+#Peony .hearts-container {
+    background-color: #423530;
+    background-image: none;
+    -webkit-text-stroke: 0;
+}
+
+.details-content.active, .relationship-content.active {
+    min-height: 500px;
+}
+
+.relationship-content .avatar {
+    border-top: 1px solid #e4e2cd;
+    border-bottom: 1px solid #7d7f2f;
+}
+
+.relationship-bar button:hover, .relationship-bar button:focus {
+    border: 1px solid #e108e1;
 }
 
 .tab-content.active::-webkit-scrollbar-thumb, .main-body-one::-webkit-scrollbar-thumb, .relationship-bar::-webkit-scrollbar-thumb, .main-page-column-2::-webkit-scrollbar-thumb  {
