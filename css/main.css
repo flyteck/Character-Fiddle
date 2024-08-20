@@ -2372,7 +2372,7 @@
       }
 
       #general-info {
-        flex: 1 1 auto;
+        flex: 0.25 1 auto;
         width: auto;
       }
 

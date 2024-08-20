@@ -69,22 +69,24 @@ h1, h2, h3, h4 {
 
 /* Maximum aspect ratio */
 @media (max-aspect-ratio: 229/158) {
-	#friend .main-image {
-        background-size: auto 100vh;
+	.main-image {
+        background-size: cover;
+        background-position: 35% top;
       }
 
-      #friend .stars {
+    .fireflies {
         mask-size: auto 100vh;
       }
 }
 
 @media (max-aspect-ratio: 625/790) {
 	.main-image {
-        background-position: 30% top;
+        background-size: auto 170%;
+        background-position: 25% 25%;
       }
 
-      .stars {
-          mask-position: 30% top;
+      .fireflies {
+          mask-position: 20% top;
       }
       .title-flex {
         bottom: 15%;
