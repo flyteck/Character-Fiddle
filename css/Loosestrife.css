@@ -1,5 +1,5 @@
 html {
-	background: #09111D;
+	background: #38003d;
 }
 
 body {
@@ -16,6 +16,14 @@ a {
 
 a:hover, a:focus {
     color: #bf0bc5;
+}
+
+hr {
+    border-color: #423530;
+}
+
+h1, h2, h3, h4 {
+    color: #1b1411;
 }
 
 #title {
@@ -107,12 +115,17 @@ a:hover, a:focus {
 
 .personality-trait {
     background-color: #e4e2cd;
+    border-color: #423530;
 }
 
 .general-container, .relationship-container {
     background: linear-gradient(15deg, #574845, #81765d);
     border: 1px solid #b947c4;
     border-bottom: 2px solid #740d7c;
+}
+
+.general-info-image {
+    width: 280px;
 }
 
 .tab-content.active::-webkit-scrollbar-thumb, .main-body-one::-webkit-scrollbar-thumb, .relationship-bar::-webkit-scrollbar-thumb, .main-page-column-2::-webkit-scrollbar-thumb  {
@@ -125,6 +138,18 @@ a:hover, a:focus {
 .main-page-column-2::-webkit-scrollbar-track, .main-body-one::-webkit-scrollbar-track {
     background-color: black;
     border-radius: 4px;
+}
+
+.avatar-xl {
+    margin: 0 -8% 10px;
+}
+
+.avatar-xl img {
+    display: none;
+}
+
+.avatar-xl img.visible {
+    display: block;
 }
 
 .progress-lower {
@@ -140,12 +165,12 @@ a:hover, a:focus {
 .trivia-blurb .fa-solid:after {
 	content: "\f005";
 	color: #e4e2cd;
-	filter: drop-shadow(-1px 1px 0 #8cb2f5) drop-shadow(1px 1px 0 #8cb2f5);
+	filter: drop-shadow(-1px 1px 0 #db87aa) drop-shadow(1px 1px 0 #db87aa);
 }
 
 .trivia-blurb {
 	border-color: #2e1a93;
-	background: linear-gradient(90deg, #848ded 30px, #e4e8f7 30px, #e4e2cd);
+	background: linear-gradient(90deg, #7d7f2f 30px, #fffeee 30px, #e3e2db);
 	box-shadow: rgba(20, 20, 60, 0.3) 0px 4px 3px, rgba(20, 20, 60, 0.2) 0px -2px 0px inset;
 }
 
@@ -172,18 +197,18 @@ a:hover, a:focus {
 }
 
 .dnd-stat-container {
-	background: linear-gradient(-15deg, #cad3e7, #e4e2cd);
-	border-top: 2px solid #ffffff;
-	border-bottom: 2px solid #7f98c6;
-	box-shadow: rgba(20, 20, 60, 0.3) 0px 2px 4px, rgba(20, 20, 60, 0.2) 0px 1px 7px -3px, rgba(20, 20, 60, 0.2) 0px -1px 0px inset;
+    background: linear-gradient(-15deg, #c4bcae, #e4e2cd);
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #423530;
+    box-shadow: rgba(20, 20, 60, 0.3) 0px 2px 4px, rgba(20, 20, 60, 0.2) 0px 1px 7px -3px, rgba(20, 20, 60, 0.2) 0px -1px 0px inset;
 }
 
 .dnd-stat-container .value {
-	background: linear-gradient(#819ac7, #6982b1);
-	color: white;
-	border-top: 1px solid #d8e6ff;
-	border-bottom: 1px solid #151a24;
-	box-shadow: rgba(20, 20, 60, 0.3) 0px 2px 4px, rgba(20, 20, 60, 0.2) 0px 1px 7px -3px, rgba(20, 20, 60, 0.2) 0px -1px 0px inset;
+    background: linear-gradient(#7d7f2f, #b1b342);
+    color: #ffffff;
+    border-top: 1px solid #d8e6ff;
+    border-bottom: 1px solid #151a24;
+    font-weight: 600;
 }
 
 .dnd-button-bar button {
@@ -194,11 +219,11 @@ a:hover, a:focus {
 }
 
 .dnd-button-bar button:hover, .dnd-button-bar button:focus {
-	background: #5e7296;
+	background: #7d7f2f;
 }
 
 .dnd-button-bar button.activebtn, .dnd-button-bar button.activebtn {
-	background: #3da7fe;
+	background: #e108e1;
 	color: #14143c;
 }
 
@@ -207,25 +232,26 @@ a:hover, a:focus {
 }
 
 .spell-link {
-      background: #d5e0f7;
-      border-top: 1px solid #ffffff;
-      border-bottom: 1px solid #9aaac6;
-    }
+    background: #d4cdb6;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #c4bcae;
+}
 
 .spell-link:hover, .spell-link:focus {
-	background: #bcd4ff;
+	background: #b1b342;
 }
 
 .save-and-attack div {
-      background: linear-gradient(15deg, #c4bcae, #d5e0f7);
-      border-top: 1px solid #e4e2cd;
-      border-bottom: 2px solid #445676;
+    background: linear-gradient(15deg, #b1b342, #7d7f2f);
+    border-top: 1px solid #e4e2cd;
+    border-bottom: 2px solid #423530;
+    color: white;
 }
 
 .dnd-ability {
-    border: 1px solid #7f98c6;
-    background: linear-gradient(15deg, #e4e8f7, #e4e2cd);
- }
+    border: 1px solid #7d7f2f;
+    background: linear-gradient(15deg, #e6e7ae, #c4bcae);
+}
 
  .material-component {
       background: #e4e2cd;
@@ -240,15 +266,15 @@ a:hover, a:focus {
 }
 
 .comic-wrapper {
-      background: #d6dcee;
-      color: #14143c;
-      border-top: 1px solid #e4e2cd;
-      border-bottom: 2px solid #445676;
-      box-shadow: rgba(20, 20, 60, 0.3) 0px 2px 4px, rgba(20, 20, 60, 0.2) 0px 1px 7px -3px, rgba(20, 20, 60, 0.2) 0px -1px 0px inset;
+    background: #c4bcae;
+    color: #423530;
+    border-top: 1px solid #e4e2cd;
+    border-bottom: 2px solid #423530;
 }
 
 .comic-wrapper:hover, .comic-wrapper:focus {
-      background: #d2e2ff;
+    background: #e4e2cd;
+    color: #e108e1;
 }
 
 .comic-wrapper img {
@@ -265,32 +291,46 @@ a:hover, a:focus {
 }
 
 .dressup-container {
-    background: url(https://flyteckscharactersheets.cfw.me/files/dots.png) center / 300px, linear-gradient(180deg, #b3c2dd 0, #3a3f55 100%);
-    border: 1px solid #7890b9;
-    box-shadow: rgb(59 60 74) 3px 3px 6px 0px inset, rgb(45 45 65 / 25%) -3px -3px 6px 1px inset;
-    border-top: 2px solid #6984ab;
-    border-bottom: 2px solid #8da2c9;
+    background: url(../img/layout/beetles.png) center / 90px, linear-gradient(180deg, #edeed4 0, #808070 100%);
+    border: 1px solid #423530;
+    box-shadow: rgb(74 68 59) 3px 3px 6px 0px inset, rgb(65 55 45 / 25%) -3px -3px 6px 1px inset;
+    border-top: 2px solid #423530;
+    border-bottom: 2px solid #7d725b;
+}
+
+.outfit-checkbox-container {
+    background: #c5bea7;
+    border-top: 1px solid #c4bcae;
+    border-bottom: 1px solid #7d7f2f;
 }
 
 .outfit-scroll-wrapper {
-    background: #d6dcee;
-    border-top: 1px solid #ccdbff;
-    border-bottom: 1px solid #848ded;
+    background: #e4e2cd;
+    border-top: 1px solid #c4bcae;
+    border-bottom: 1px solid #7d7f2f;
+}
+
+.outfit-scroll-wrapper .outfit-checkbox-container {
+    background: #c5bea7;
+    border-top: 1px dashed #e4e2cd;
+    border-bottom: 1px dashed #423530;
+}
+
+details > summary:after {
+    background: #7d7f2f;
+    color: white;
+}
+
+details > summary:hover:after, details > summary:focus:after {
+    background: #b1b342;
 }
 
 .hairstyle-rec img {
       background: url(https://flyteckscharactersheets.cfw.me/files/icons/bluestar.png) center/contain no-repeat;
 }
 
-.outfit-checkbox-container {
-      background: #e2e4ff;
-      border-top: 1px solid #ffffff;
-      border-bottom: 1px solid #7c5cc0;
-}
-
 .sticky-box {
-    background: #848ded;
-    color: #c4bcae;
+    background: #7d7f2f;
     border-radius: 6px 6px 0 0;
     border-bottom: 1px solid #c4bcae;
 }
@@ -298,48 +338,50 @@ a:hover, a:focus {
 .clothing-checkbox-container {
       background-color: #e4e2cd;
       border-top: 1px solid #ffffff;
-      border-bottom: 1px solid #848ded;
+      border-bottom: 1px solid #7d7f2f;
 }
 
 .clothing-checkbox-container:hover, .clothing-checkbox-container:focus, .clothing-checkbox-container:focus-within, .clothing-checkbox-container:active {
-	background-color: #e54576;
-    	opacity: 1;
-    	color: #ffffff;
+	background-color: #ced094;
+    opacity: 1;
 }
 
 .clothing-checkbox-container input:checked ~ .checkmark {
-	background-color: #e54576;
-	background-image: url(../img/layout/visibleiconwhite.png);
+	background-color: #ced094;
+}
+
+.color-palette {
+    filter: drop-shadow(1px 5px 10px #423530);
 }
 
 .palette-button {
-      background-color: #bcd4ff;
       border: 1px solid #242460;
-      background: #bcd4ff url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconscharacter.png) center center / 35px no-repeat;
+      background: #7d7f2f url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconscharacter.png) center center / 35px no-repeat;
 }
 
 #outfit-button {
-      background: #bcd4ff url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconsclothes.png) center center / 35px no-repeat;
+      background: #7d7f2f url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconsclothes.png) center center / 35px no-repeat;
 }
 
 .outfit-toggle, .front-back-toggle {
-    background: #848ded;
+    background: #7d7f2f;
     border-top: 1px solid #c4bcae;
-    border-bottom: 1px solid #4e51e1;
-    color: #c4bcae;
+    border-bottom: 1px solid #423530;
+    color: #e4e2cd;
 }
 
 .outfit-toggle:hover, .outfit-toggle:focus, .front-back-toggle:hover, .front-back-toggle:focus, .palette-button:hover, .palette-button:focus, #outfit-button:hover, #outfit-button:focus {
-      background-color: #6063f2;
-      border-bottom: 1px solid #2d3266;
+      background-color: #e108e1;
+      color: #fff9a2;
 }
 
 .outfit-toggle:active, .front-back-toggle:active, .palette-button:active, #outfit-button:active {
-	background-color: #4e51e1;
-      border-color: #d6dcee;
-      border-top: 2px solid transparent;
-      border-bottom: none;
-      background-clip: padding-box;
+	background-color: #6e0f6e;
+    color: #e108e1;
+    border-color: #d6dcee;
+    border-top: 2px solid transparent;
+    border-bottom: none;
+    background-clip: padding-box;
 }
 
 .tab-background {
@@ -353,9 +395,9 @@ a:hover, a:focus {
 }
 
 .details-content.active, .relationship-content.active {
-	background: linear-gradient(15deg, #b2c3de, #dae4f9);
-    border-top: 1px solid #e4e2cd;
-    border-bottom: 2px solid #445676;
+	background: linear-gradient(15deg, #8c7f61, #dfd3a8);
+    border-top: 1px solid #e108e1;
+    border-bottom: 2px solid #750a75;
 }
 
 .general-title-bar {
@@ -364,19 +406,17 @@ a:hover, a:focus {
 }
 
 .outfit-scroll-wrapper::-webkit-scrollbar-thumb  {
-      background: linear-gradient(45deg, #848ded 25%, #e4e2cd 25.5%, #e4e2cd 50%, #848ded 50.5%, #848ded 75%, #e4e2cd 75.5%, #e4e2cd) center/10px;
+      background: linear-gradient(45deg, #7d7f2f 25%, #e4e2cd 25.5%, #e4e2cd 50%, #7d7f2f 50.5%, #7d7f2f 75%, #e4e2cd 75.5%, #e4e2cd) center/10px;
       background-size: 20px 20px;
+}
+
+.outfit-scroll-wrapper::-webkit-scrollbar-track {
+    background: #42352f;
 }
 
 @media (max-width: 700px) {
 
-	.tab-one-container {
-	        background: linear-gradient(15deg, #c4bcae, #d5e0f7);
-	        border-top: 1px solid #e4e2cd;
-	        border-bottom: 2px solid #445676;
-	}
-
-	.tab-six-container {
-	        background: linear-gradient(15deg, #c4bcae, #d5e0f7);
-	}
+    .avatar-xl {
+        margin: 0 auto;
+    }
 }

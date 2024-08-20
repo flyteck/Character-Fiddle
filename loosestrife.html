@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="css/general.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/spook.css" type="text/css">
+    <link rel="stylesheet" href="css/Loosestrife.css" type="text/css">
 
     <link rel="stylesheet" href="fonts/hvdpostercss.css">
     <link rel="stylesheet" href="fonts/cuniacss.css" type="text/css">
@@ -90,9 +90,8 @@
 
 <!-- spell cards -->
   <div id="spell-cards" class="big-modal">
-<!-- spell cards -->
-    <div class="close-button" onclick="closeModal(event, 'spell-cards')"><i class="fa-regular fa-circle-xmark"></i></div>
 
+    <div class="close-button" onclick="closeModal(event, 'spell-cards')"><i class="fa-regular fa-circle-xmark"></i></div>
     <!--- Spell /-->
     <div class="modal-item" id="rayoffrost">
 
@@ -454,7 +453,7 @@
         <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
 
     </div>
-<!-- end of spell cards -->
+
   </div>
 <!-- end of spell cards -->
 
@@ -512,7 +511,7 @@
     <div class="tab-wrapper">
 
         <div id="title" class="title-flex">
-          <h1>Spook</h1>
+          <h1>Loosestrife</h1>
           <div class="tagline">A tiefling sorcerer who was abandoned as a toddler, somehow found his way into the catacombs of a military fortress, and was adopted and raised by the ghosts who live there.</div>
         </div>
 
@@ -532,32 +531,34 @@
             <div class="tab-one-container general-container">
 
               <div class="main-page-column-1">
-                <div class="avatar-xl"><img src="img/general/main-headshot.png"></div>
-                <h1><i class="fa-solid fa-cloud-moon"></i>Spook</h1>
+                <div class="avatar-xl" id="loosestrife-hs">
+                    <img src="img/general/loosestrife-headshot.png">
+                    <img src="img/general/loosestrife-headshot2.png">
+                    <img src="img/general/loosestrife-headshot2.png">
+                </div>
+                <h1><i class="fa-solid fa-bugs"></i>Loosestrife Zaramir</h1>
                 <div id="general-info">
                   <div class="info-inner"><span class="title">Pronouns</span><span>He/Him</span></div>
-                  <div class="info-inner"><span class="title">Birthday</span><span>Unknown</span></div>
-                  <div class="info-inner"><span class="title">Found-You Day</span><span>Oct. 28th</span></div>
-                  <div class="info-inner"><span class="title">Physical</span><span>6'5 • 120lbs • 21</span></div>
-                  <div class="info-inner"><span class="title">Race</span><span>Tiefling (Levistus)</span></div>
+                  <div class="info-inner"><span class="title">Birthday</span><span>May 7th</span></div>
+                  <div class="info-inner"><span class="title">Physical</span><span>6'3 • 200lbs • 32</span></div>
+                  <div class="info-inner"><span class="title">Race</span><span>Tiefling (Baalzebul)</span></div>
                 </div>
               </div>
 
               <div class="main-page-column-2">
                 <div class="general-title-bar">
-                  <h1><i class="fa-solid fa-cloud-moon"></i>Spook</h1>
-                  <div class="tagline" style="display: none;">A tiefling sorcerer who was abandoned as a toddler, somehow found his way into the catacombs of a military fortress, and was adopted and raised by the ghosts who live there.</div>
+                  <h1><i class="fa-solid fa-bugs"></i>Loosestrife Zaramir</h1>
                 </div>
 
                 <div class="info-row-inner">
                   <div class="flex-column">
                     <div id="appearance" class="text-container">
                       <h4><i class="fa-solid fa-magnifying-glass-plus"></i> Appearance Notes</h4>
-                      <div class="content">Spindly - borderline malnourished looking; no fat and not much muscle. Defined cheekbones. Upper lip sticks out a bit due to his large canines. Tends to hunch slightly unless he's thinking about it, and also tends to drag his tail. Pupils are very reflective. Squints in bright light. Skin is always cold to the touch, and his pulse is faint (but steady).</div>
+                      <div class="content">Tall and lithe, but well built with lean muscle. Long legs, with proto-hoof like feet. Angular features with a small, pointed chin, and a small nose with a bump in the middle of the bridge. Broad, antler-like horns with additional spines on his jaw, chin, ankles, and elbows (kept filed down). Wild, scraggly hair, partially matted around the back where it was once tied up. Yellowed, shark-like teeth; dark purple gums; and a black forked tongue. Bright purple scleras with lime green irises and square pupils. Dark, pronounced, bags under his eyes.</div>
                     </div>
                     <div id="voice" class="text-container">
                       <h4><i class="fa-solid fa-microphone-lines"></i> Voice Notes</h4>
-                      <div class="content">Low, quiet, monotone; can be hard to hear, tendency to mumble. Usually sounds confused/uncertain. Pitch goes up a bit if he's excited or nervous, but doesn't really get louder. Slight lisp on some words due to his teeth.</div>
+                      <div class="content">Higher than you may expect, but still noteably masculine, with a raspy quality. Talks very quickly and incoherrently. Commonly exhales and makes grumbling/growling/etc noises to emphasize his speech. Sometimes will speak telepathically and verbally at the same time, often saying slightly different things. When calm or particularily present, he speaks slower, and with a softness not otherwise heard.</div>
                     </div>
                   </div>
                 </div>
@@ -566,32 +567,32 @@
                   <div class="text-container flex-column">
                       <h4>
                         <a href="https://www.16personalities.com"><i class="fa-solid fa-clipboard-list"></i>Myer-Briggs Personality</a>&nbsp;
-                        <a href="https://www.16personalities.com/infj-personality">[INFJ-T]</a>
+                        <a href="https://www.16personalities.com/intj-personality">[INTJ-T]</a>
                       </h4>
 
                       <div class="progress-bar-container">
-                        <div class="progress-bar-left progress-lower" style="width:25%;"><span class="tooltip">Extroverted<span class="tooltip-text tooltip-right">Energized by social interaction, more easily excitable</span></span></div>
-                        <div class="progress-bar-right progress-higher" style="width:75%;"><span class="tooltip">Introverted (75%)<span class="tooltip-text tooltip-left">Drained by social interaction, sensitive to external stimulation</span></span></div>
+                        <div class="progress-bar-left progress-lower" style="width:10%;"><span class="tooltip">Extroverted<span class="tooltip-text tooltip-right">Energized by social interaction, more easily excitable</span></span></div>
+                        <div class="progress-bar-right progress-higher" style="width:90%;"><span class="tooltip">Introverted (90%)<span class="tooltip-text tooltip-left">Drained by social interaction, sensitive to external stimulation</span></span></div>
                       </div>
 
                       <div class="progress-bar-container">
-                        <div class="progress-bar-left progress-higher" style="width:58%;"><span class="tooltip">Intuitive (58%)<span class="tooltip-text tooltip-right">Imaginative, open-minded and curious; focus on possibilities</span></span></div>
-                        <div class="progress-bar-right progress-lower" style="width:42%;"><span class="tooltip">Observant<span class="tooltip-text tooltip-left">Practical and down-to-earth, focus on realities</span></span></div>
+                        <div class="progress-bar-left progress-higher" style="width:75%;"><span class="tooltip">Intuitive (75%)<span class="tooltip-text tooltip-right">Imaginative, open-minded and curious; focus on possibilities</span></span></div>
+                        <div class="progress-bar-right progress-lower" style="width:25%;"><span class="tooltip">Observant<span class="tooltip-text tooltip-left">Practical and down-to-earth, focus on realities</span></span></div>
                       </div>
 
                       <div class="progress-bar-container">
-                        <div class="progress-bar-left progress-lower" style="width:30%;"><span class="tooltip">Thinking<span class="tooltip-text tooltip-right">Focus on objectivity and rationality, prioritizing logic over emotions</span></span></div>
-                        <div class="progress-bar-right progress-higher" style="width:70%;"><span class="tooltip">Feeling (70%)<span class="tooltip-text tooltip-left">Sensitive and emotionally expressive</span></span></div>
+                        <div class="progress-bar-left progress-higher" style="width:69%;"><span class="tooltip">Thinking (69%)<span class="tooltip-text tooltip-right">Focus on objectivity and rationality, prioritizing logic over emotions</span></span></div>
+                        <div class="progress-bar-right progress-lower" style="width:31%;"><span class="tooltip">Feeling<span class="tooltip-text tooltip-left">Sensitive and emotionally expressive</span></span></div>
                       </div>
 
                       <div class="progress-bar-container">
-                        <div class="progress-bar-left progress-higher" style="width:71%;"><span class="tooltip">Judging (71%)<span class="tooltip-text tooltip-right">Value clarity and predictability, preferring structure and planning to spontaneity</span></span></div>
-                        <div class="progress-bar-right progress-lower" style="width:29%;"><span class="tooltip">Prospecting<span class="tooltip-text tooltip-left">Flexible, good at improvising, prefer to keep their options open</span></span></div>
+                        <div class="progress-bar-left progress-higher" style="width:75%;"><span class="tooltip">Judging (75%)<span class="tooltip-text tooltip-right">Value clarity and predictability, preferring structure and planning to spontaneity</span></span></div>
+                        <div class="progress-bar-right progress-lower" style="width:25%;"><span class="tooltip">Prospecting<span class="tooltip-text tooltip-left">Flexible, good at improvising, prefer to keep their options open</span></span></div>
                       </div>
 
                       <div class="progress-bar-container">
-                        <div class="progress-bar-left progress-lower" style="width:47%;"><span class="tooltip">Assertive<span class="tooltip-text tooltip-right">Self-assured, even-tempered and resistant to stress</span></span></div>
-                        <div class="progress-bar-right progress-higher" style="width:53%;"><span class="tooltip">Turbulent (53%)<span class="tooltip-text tooltip-left">Self-conscious and sensitive to stress, emotional</span></span></div>
+                        <div class="progress-bar-left progress-lower" style="width:32%;"><span class="tooltip">Assertive<span class="tooltip-text tooltip-right">Self-assured, even-tempered and resistant to stress</span></span></div>
+                        <div class="progress-bar-right progress-higher" style="width:68%;"><span class="tooltip">Turbulent (68%)<span class="tooltip-text tooltip-left">Self-conscious and sensitive to stress, emotional</span></span></div>
                       </div>
                     </div>
 
@@ -599,20 +600,15 @@
                       <div class="text-container likes-dislikes flex-column">
                         <h4><i class="fa-solid fa-check"></i> Likes</h4>
                         <ul class="likes-dislikes content">
-                          <li><i class="fa-solid fa-circle-check"></i> Small, dark places</li>
-                          <li><i class="fa-solid fa-circle-check"></i> Holding hands !!!</li>
-                          <li><i class="fa-solid fa-circle-check"></i> Food ♥</li>
-                          <li><i class="fa-solid fa-circle-check"></i> Delicate flora & fauna</li>
+                          <li><i class="fa-solid fa-circle-check"></i> Insects</li>
+                          <li><i class="fa-solid fa-circle-check"></i> ???</li>
                         </ul>
                       </div>
 
                       <div class="text-container likes-dislikes flex-column">
                        <h4><i class="fa-solid fa-xmark"></i> Dislikes</h4>
                         <ul class="likes-dislikes content">
-                          <li><i class="fa-solid fa-circle-xmark"></i> Weather as a concept</li>
-                          <li><i class="fa-solid fa-circle-xmark"></i> Loud/crowded places</li>
-                          <li><i class="fa-solid fa-circle-xmark"></i> Yelling/Shouting</li>
-                          <li><i class="fa-solid fa-circle-xmark"></i> Travel rations :U</li>
+                          <li><i class="fa-solid fa-circle-xmark"></i> ???</li>
                         </ul>
                       </div>
                     </div>
@@ -627,7 +623,7 @@
             <div class="general-container">
 
               <div class="text-container">
-                <img src="img/general/SpookChibi.png" class="general-info-image">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/70558654_y6kHLVnhSiBdB4a.png?1694182087" class="general-info-image">
                 <h4><i class="fa-solid fa-pencil"></i>General Info</h4>
                 <p>Fill later - stuff like setting/world, any additional info, alliances, home, etc</p>
               </div>
@@ -2001,6 +1997,18 @@
 <!-- JS -->
 
 <script src="https://flyteckscharactersheets.cfw.me/files/CharacterFiddleJS.js?004"></script>
+
+<!-- Random headshot code -->
+<script>
+    window.addEventListener("load", (event) => {
+        var Container = document.getElementById("loosestrife-hs");
+        var images = Container.getElementsByTagName("img");
+        const randomElement = images[Math.floor(Math.random() * images.length)];
+
+        randomElement.classList.add("visible");
+    });
+</script>
+<!-- Random headshot code -->
 
 </body>
 </html>

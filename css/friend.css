@@ -18,6 +18,10 @@ a:hover, a:focus {
     color: #bd1647;
 }
 
+hr {
+	border-color: #efedff;
+}
+
 #title {
       color: #e0d7ff;
       background: -webkit-linear-gradient(#e0d7ff, #6b76da);
@@ -110,8 +114,8 @@ a:hover, a:focus {
 
 .general-container, .relationship-container {
       background: linear-gradient(15deg, #8aa4e0, #c8cafa);
-      border: 1px solid black;
-      border-bottom: 2px solid black;
+      border: 1px solid #1f19b8;
+      border-bottom: 2px solid #1f19b8;
 }
 
 .tab-content.active::-webkit-scrollbar-thumb, .main-body-one::-webkit-scrollbar-thumb, .relationship-bar::-webkit-scrollbar-thumb, .main-page-column-2::-webkit-scrollbar-thumb  {
@@ -120,7 +124,7 @@ a:hover, a:focus {
 
 .progress-lower {
 	background-color: #34326d;
-	color: #a7aefa;
+	color: #eceeff90;
 }
 
 .progress-higher {
@@ -375,13 +379,9 @@ a:hover, a:focus {
 
 @media (max-width: 700px) {
 
-	.tab-one-container {
-	        background: linear-gradient(15deg, #efedff, #d5e0f7);
-	        border-top: 1px solid #f2f3ff;
-	        border-bottom: 2px solid #445676;
-	}
-
-	.tab-six-container {
-	        background: linear-gradient(15deg, #efedff, #d5e0f7);
+	.tab-one-container, .tab-six-container {
+	    background: linear-gradient(15deg, #8aa4e0, #c8cafa);
+	    border: 1px solid #1f19b8;
+	    border-bottom: 2px solid #1f19b8;
 	}
 }
