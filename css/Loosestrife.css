@@ -26,14 +26,6 @@ h1, h2, h3, h4 {
     color: #1b1411;
 }
 
-.menu {
-}
-
-.menu > a, .music-box {
-    color:#6b7fb4;
-    mix-blend-mode: difference;
-}
-
 #title {
     color: #fffeb1;
     background: -webkit-linear-gradient(#d9fff5, #fba6ff);
@@ -102,6 +94,18 @@ h1, h2, h3, h4 {
         right: auto;
         left: 2%;
       }
+
+      /** these end up over the bright part and aren't visible */
+
+      .menu-icon {
+            filter: invert(30%) sepia(100%) saturate(140%) hue-rotate(165deg);
+            mix-blend-mode: difference;
+        }
+
+        .menu > a, .music-box {
+            color:#6b7fb4;
+            mix-blend-mode: difference;
+        }
 }
 
 /** /Main Image **/
