@@ -1,5 +1,5 @@
 html {
-	background: linear-gradient(180deg, black, #4e054e), black;
+	background: linear-gradient(180deg, black, #00333f), black;
 }
 
 body {
@@ -27,13 +27,18 @@ h1, h2, h3, h4 {
 }
 
 #title {
-      color: #e0d7ff;
-      background: -webkit-linear-gradient(#e0d7ff, #6b76da);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 10px #a397cb99;
-      mix-blend-mode: plus-lighter;
+    color: #fffeb1;
+    background: -webkit-linear-gradient(#d9fff5, #fba6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #32ffee42;
+    mix-blend-mode: hard-light;
 }
+
+#Main-Body {
+      opacity: 0.2;
+      filter: sepia(20%) hue-rotate(110deg);
+    }
 
 /** Main Image **/
 
