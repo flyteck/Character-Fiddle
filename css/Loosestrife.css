@@ -26,6 +26,14 @@ h1, h2, h3, h4 {
     color: #1b1411;
 }
 
+.menu {
+}
+
+.menu > a, .music-box {
+    color:#6b7fb4;
+    mix-blend-mode: difference;
+}
+
 #title {
     color: #fffeb1;
     background: -webkit-linear-gradient(#d9fff5, #fba6ff);
@@ -81,7 +89,7 @@ h1, h2, h3, h4 {
 
 @media (max-aspect-ratio: 625/790) {
 	.main-image {
-        background-size: auto 170%;
+        background-size: auto 160vh;
         background-position: 25% 25%;
       }
 
