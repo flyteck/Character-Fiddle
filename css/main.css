@@ -1651,10 +1651,15 @@
       background-color: darkgrey;
     }
 
-    #detailbar .btn {
-      margin: 10px;
+    #detailbar div {
       display: flex;
       flex-direction: column;
+      pointer-events: none;
+      margin: 10px;
+    }
+
+    #detailbar .btn {
+      transition: 200ms ease;
     }
 
     #detailbar .btn.activebtn {
