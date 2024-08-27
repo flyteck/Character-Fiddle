@@ -1,3 +1,5 @@
+    /** Main CSS - this applies to character pages **/
+
     #title {
       padding: 20px 10px;
       font-family: "Piazzolla", serif;
@@ -1171,7 +1173,8 @@
     #outfits {
       display: flex;
       justify-content: center;
-      max-height: calc(var(--vh, 1vh) * 75);
+      height: calc(var(--vh, 1vh)* 75);
+      max-height: 700px;
     }
 
     .color-palette {
@@ -1666,18 +1669,23 @@
       background: red;
     }
 
+    .general-container {
+      max-width: 1100px;
+    }
+
+    #tab6 .general-container {
+      margin: 10px auto;
+      flex-grow: 1;
+    }
+
     .general-container, .relationship-container {
       padding: 20px;
       border-radius: 12px;
       background: linear-gradient(15deg, #5d7aa2, #8da2c9);
-      margin: 10px 0 0;
       border: 1px solid black;
       border-bottom: 2px solid black;
       width: -webkit-fill-available;
-    }
-
-    .general-container:first-child {
-      margin: 0;
+      margin: auto;
     }
 
     .general-info-image {
@@ -1689,11 +1697,9 @@
     }
 
     .relationship-container {
-      max-width: 900px;
+      width: 900px;
       margin: 10px auto 0;
-      min-width: 80%;
       padding: 20px 40px 40px 20px;
-      width: -webkit-fill-available;
     }
 
     .relationship-links {
@@ -2147,7 +2153,7 @@
         border-bottom: 1px solid #7f98c6;
     }
 
-    .info-row, .info-row-inner, .tab-one-container, .tab-six-container {
+    .info-row, .info-row-inner, .tab-one-container, .tab-five-container {
       display: flex;
       flex-grow: 1;
     }
@@ -2170,8 +2176,9 @@
       gap: 10px;
     }
 
-    .tab-one-container, .tab-six-container {
-     max-height: calc(var(--vh, 1vh) * 79);
+    .tab-one-container, .tab-five-container {
+      height: calc(var(--vh, 1vh)* 79);
+      max-height: 700px;
     }
 
     .info-wrapper {
@@ -2400,6 +2407,10 @@
       .text-container.likes-dislikes {
         max-width: none;
       }
+
+      .relationship-container {
+        width: -webkit-fill-available;
+      }
     }
 
     @media (max-width: 900px) {
@@ -2575,7 +2586,7 @@
         margin-bottom: 10px;
       }
 
-      .tab-six-container {
+      .tab-five-container {
         height: auto;
         max-height: none;
       }
@@ -2674,7 +2685,7 @@
     }
 
     @media (max-width: 700px) {
-      .info-row, .tab-one-container, .tab-six-container {
+      .info-row, .tab-one-container, .tab-five-container {
         flex-direction: column;
       }
 
@@ -2821,7 +2832,7 @@
         border: 1px solid #495469;
       }
 
-      .tab-six-container {
+      .tab-five-container {
         padding: 0;
         background: linear-gradient(15deg, #aec4e8, #d5e0f7);
       }
