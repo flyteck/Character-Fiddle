@@ -372,6 +372,17 @@ function outfitToggle(evt, OutfitContainer) {
     }
   }
 
+  // Add a mask to all shirts when the right bracer is selected 
+  function bracerMask() {
+    var shirts = document.querySelectorAll(".shirt, .shirt-back"),
+      len = shirts !== null ? shirts.length : 0,
+      i = 0;
+
+    for(i; i < len; i++) {
+      shirts[i].classList.toggle("bracer-mask");
+    }
+  }
+
 // Select hairstyle from the reccommended menu
   function hairClick(evt, hairStyle) {
     var hair = document.getElementById(hairStyle);
