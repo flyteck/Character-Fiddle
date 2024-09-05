@@ -531,7 +531,7 @@
             <div class="tab-one-container general-container">
 
               <div class="main-page-column-1">
-                <div class="avatar-xl" id="loosestrife-hs">
+                <div class="avatar-xl random-image" id="loosestrife-hs">
                     <img src="img/general/loosestrife-headshot.png">
                     <img src="img/general/loosestrife-headshot2.png">
                     <img src="img/general/loosestrife-headshot2.png">
@@ -981,11 +981,20 @@
                     </div>
 
                     <div class="base">
-                      <div class="front-layer">
+                      <div class="front-layer random-image">
                         <img src="img/dressup/loosestrife/loosestrifebase-front1.png">
+                        <img src="img/dressup/loosestrife/loosestrifebase-front2.png">
                       </div>
                       <div class="back-layer">
                         <img src="img/dressup/loosestrife/loosestrifebase-back.png">
+                      </div>
+                    </div>
+
+                    <div class="layer tail clothing-visible">
+                      <div class="front-layer">
+                        <img src="img/dressup/loosestrife/loosestrifetail-front.png" style="opacity:0;">
+                      </div>
+                      <div class="back-layer">
                         <img src="img/dressup/loosestrife/loosestrifetail-back.png">
                       </div>
                     </div>
@@ -1024,13 +1033,13 @@
                     </div>
 
                     <div class="beltwrap layer clothing-visible">
-                      <div class="front-layer">
-                        <img src="img/dressup/loosestrife/belt.png">
+                      <div class="front-layer random-image">
+                        <img src="img/dressup/loosestrife/belt.png" style="opacity: 1;">
                         <img src="img/dressup/loosestrife/waistfur.png" class="waistfur clothing-visible">
                         <img src="img/dressup/loosestrife/sash.png" class="sash clothing-visible">
                       </div>
                       <div class="back-layer">
-                        <img src="img/dressup/loosestrife/belt-back.png">
+                        <img src="img/dressup/loosestrife/belt-back.png" style="opacity: 1;">
                         <img src="img/dressup/loosestrife/waistfur-back.png" class="waistfur clothing-visible">
                         <img src="img/dressup/loosestrife/sash-back.png" class="sash clothing-visible">
                       </div>
@@ -1978,18 +1987,6 @@
 <!-- JS -->
 
 <script src="js/CharacterFiddleJS.js"></script>
-
-<!-- Random headshot code -->
-<script>
-    window.addEventListener("load", (event) => {
-        var Container = document.getElementById("loosestrife-hs");
-        var images = Container.getElementsByTagName("img");
-        const randomElement = images[Math.floor(Math.random() * images.length)];
-
-        randomElement.classList.add("visible");
-    });
-</script>
-<!-- Random headshot code -->
 
 </body>
 </html>

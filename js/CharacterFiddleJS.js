@@ -459,3 +459,53 @@ function colourCode(evt, bgColour) {
     document.getElementById(tab).click();
   }
 
+
+// Random Number Generator to append to IMGs for variable images
+
+  window.addEventListener("load", randomImage);
+  //fire on load
+
+  function randomImage() {
+    var imageContainers = document.querySelectorAll(".random-image");
+    imageContainersLen = imageContainers !== null ? imageContainers.length : 0;
+    //get all random image containers
+    console.log(imageContainers);
+
+    for(let i = 0; i < imageContainersLen; i++) {
+      var images = imageContainers[i].getElementsByTagName("img");
+      imagesLen = images !== null ? images.length : 0;
+      //get all images within them
+      console.log(images);
+          var shownImage = images[Math.floor(Math.random()*images.length)];
+          //show a random image from the array
+          console.log(shownImage);
+          shownImage.classList.add("visible");
+    }
+  }
+
+// Random Number Generator -- this one shows multiple random images in a div. Consider for belt items
+
+  //need to add listener on load
+
+  //update classes to be unique, if this code gets used
+  function randomizedImagesAll() {
+    var imageContainers = document.querySelectorAll(".random-image");
+    imageContainersLen = imageContainers !== null ? imageContainers.length : 0;
+    //get all random image containers
+    console.log(imageContainers);
+
+    for(let i = 0; i < imageContainersLen; i++) {
+      var images = imageContainers[i].getElementsByTagName("img");
+      imagesLen = images !== null ? images.length : 0;
+      //get all images within them
+      console.log(images);
+        for(let i = 0; i < imagesLen; i++) {
+          var shownImage = images[Math.floor(Math.random()*images.length)];
+          //show a random number of them
+          console.log(shownImage);
+          shownImage.classList.add("test");
+        }
+    }
+  }
+
+
