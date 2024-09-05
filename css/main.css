@@ -1583,7 +1583,7 @@
     }
 
     .shirt-back.bracer-mask {
-      mask: url(https://flyteckscharactersheets.cfw.me/files/dressup/warmerclipback.png) top center / contain;
+      mask: url(../img/dressup/loosestrife/bracermask-back.png) top center / contain;
     }
 
     .behind {
