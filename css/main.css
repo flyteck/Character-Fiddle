@@ -1571,11 +1571,11 @@
     }
 
     .shirt.mask, .necklace.mask {
-      mask: url(https://flyteckscharactersheets.cfw.me/files/dressup/warmerclip.png) top center / contain;
+      mask: url(../img/dressup/spook/warmerclip.png) top center / contain;
     }
 
     .shirt-back.mask {
-      mask: url(https://flyteckscharactersheets.cfw.me/files/dressup/warmerclipback.png) top center / contain;
+      mask: url(../img/dressup/spook/warmerclipback.png) top center / contain;
     }
 
     .shirt.bracer-mask {
