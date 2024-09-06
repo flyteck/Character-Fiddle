@@ -469,16 +469,13 @@ function colourCode(evt, bgColour) {
     var imageContainers = document.querySelectorAll(".random-image");
     imageContainersLen = imageContainers !== null ? imageContainers.length : 0;
     //get all random image containers
-    console.log(imageContainers);
 
     for(let i = 0; i < imageContainersLen; i++) {
       var images = imageContainers[i].getElementsByTagName("img");
       imagesLen = images !== null ? images.length : 0;
       //get all images within them
-      console.log(images);
           var shownImage = images[Math.floor(Math.random()*images.length)];
           //show a random image from the array
-          console.log(shownImage);
           shownImage.classList.add("visible");
     }
   }
@@ -492,14 +489,17 @@ function colourCode(evt, bgColour) {
     var imageContainers = document.querySelectorAll(".random-image");
     imageContainersLen = imageContainers !== null ? imageContainers.length : 0;
     //get all random image containers
+    console.log(imageContainers);
 
     for(let i = 0; i < imageContainersLen; i++) {
       var images = imageContainers[i].getElementsByTagName("img");
       imagesLen = images !== null ? images.length : 0;
       //get all images within them
+      console.log(images);
         for(let i = 0; i < imagesLen; i++) {
           var shownImage = images[Math.floor(Math.random()*images.length)];
           //show a random number of them
+          console.log(shownImage);
           shownImage.classList.add("test");
         }
     }
