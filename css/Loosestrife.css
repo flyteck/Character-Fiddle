@@ -136,6 +136,24 @@ h1, h2, h3, h4 {
     border-color: #423530;
 }
 
+#LoosestrifePersonalityFlipBack.personality-trait-container  {
+    background: #0f1013;
+}
+
+#LoosestrifePersonalityFlipBack .personality-trait  {
+    background: rgb(64,255,238);
+    background: -moz-linear-gradient(161deg, rgba(64,255,238,1) 0%, rgba(224,134,11,1) 52%, rgba(255,23,166,1) 100%);
+    background: -webkit-linear-gradient(161deg, rgba(64,255,238,1) 0%, rgba(224,134,11,1) 52%, rgba(255,23,166,1) 100%);
+    background: linear-gradient(161deg, rgba(64,255,238,1) 0%, rgba(224,134,11,1) 52%, rgba(255,23,166,1) 100%);
+    color: transparent;
+    border-color: #e108e1;
+    background-clip: text;
+}
+
+#LoosestrifePersonalityFlipBack.personality-trait-container .personality-trait:nth-child(odd) {
+    border-color: #40ffee;
+}
+
 .general-container, .relationship-container {
     background: linear-gradient(15deg, #574845, #81765d);
     border: 1px solid #b947c4;
@@ -412,25 +430,30 @@ details > summary:hover:after, details > summary:focus:after {
       background: #7d7f2f url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconsclothes.png) center center / 35px no-repeat;
 }
 
-.outfit-toggle, .front-back-toggle {
+.outfit-toggle, .front-back-toggle, .eye-toggle {
     background: #7d7f2f;
     border-top: 1px solid #c4bcae;
     border-bottom: 1px solid #423530;
     color: #e4e2cd;
 }
 
-.outfit-toggle:hover, .outfit-toggle:focus, .front-back-toggle:hover, .front-back-toggle:focus {
+.outfit-toggle:hover, .outfit-toggle:focus, .front-back-toggle:hover, .front-back-toggle:focus, .eye-toggle:hover, .eye-toggle:focus {
       background-color: #e108e1;
       color: #fff9a2;
 }
 
-.outfit-toggle:active, .front-back-toggle:active {
+.outfit-toggle:active, .front-back-toggle:active, .eye-toggle:active {
 	background-color: #391d47;
     color: #e108e1;
     border-color: #d6dcee;
     border-top: 2px solid transparent;
     border-bottom: none;
     background-clip: padding-box;
+    background-position: center center;
+}
+
+.eye-toggle.no-bg {
+    background-color: #e108e1;
 }
 
 .palette-button:hover, .palette-button:focus, #outfit-button:hover, #outfit-button:focus {

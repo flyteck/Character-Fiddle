@@ -216,6 +216,31 @@
       border-bottom: 1px solid #495469;
     }
 
+    .text-container .personality-trait-container {
+      border: none;
+    }
+
+    .eye-toggle {
+      background: #acc9ff;
+      padding: 2px 4px;
+      border-radius: 4px;
+      width: 30px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      transition: background 200ms ease;
+      border-top: 1px solid #f1f5ff;
+      border-bottom: 1px solid #445676;
+      background-position: center center;
+    }
+
+    .eye-toggle.no-bg {
+      background: #7f98c6 url(https://flyteckscharactersheets.cfw.me/files/icons/invisibleicon.png) center center / 21px no-repeat;
+      color: transparent!important;
+    }
+
     .personality-trait {
       font-size: 95%;
       flex: 1 0 300px;
@@ -224,6 +249,25 @@
       border: 1px dashed #7f98c6;
       border-radius: 4px;
       margin: 0 -1px -1px 0;
+    }
+
+    .fadeswap {
+      opacity: 0;
+      height: 0;
+      width: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      transition: opacity 200ms ease;
+    }
+
+    .fadeswap.visible {
+      opacity: 1;
+      height: auto;
+      width: auto;
+      margin: auto;
+      padding: unset;
+      overflow: visible;
     }
 
     .trait-title {
@@ -1531,11 +1575,11 @@
       content: 'front';
     }
 
-    .outfit-toggle:hover, .outfit-toggle:focus, .front-back-toggle:hover, .front-back-toggle:focus, .palette-button:hover, .palette-button:focus, #outfit-button:hover, #outfit-button:focus {
+    .outfit-toggle:hover, .outfit-toggle:focus, .front-back-toggle:hover, .front-back-toggle:focus, .palette-button:hover, .palette-button:focus, #outfit-button:hover, #outfit-button:focus, .eye-toggle:hover, .eye-toggle:focus {
       background-color: #8cb2f5;
     }
 
-    .outfit-toggle:active, .front-back-toggle:active, .palette-button:active, #outfit-button:active {
+    .outfit-toggle:active, .front-back-toggle:active, .palette-button:active, #outfit-button:active, .eye-toggle:active {
       background-color: #6d91d1;
       border-color: #d6dcee;
       border-top: 2px solid transparent;

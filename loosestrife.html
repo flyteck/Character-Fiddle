@@ -640,52 +640,103 @@
 
               <hr>
 
-              <div id="personality-overview" class="personality-trait-container">
-                <h4><i class="fa-solid fa-star"></i> Personality Overview</h4>
+              <div id="personality-overview" class="text-container">
+                <div class="toggle-flex">
+                    <h4><i class="fa-solid fa-star"></i> Personality Overview</h4>
+                    <h4 onclick="fadeSwap(event, 'LoosestrifePersonalityFlip')"><i class="eye-toggle fa-solid fa-eye"></i></h4>
+                </div>
                 
-                <div class="personality-trait">
-                  <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Shy</div>
-                  <div class="trait-content">Spook has very little experience with strangers, and is already shy by nature. He struggles to approach people he doesn't know.</div>
-                </div>
+                <div class="personality-trait-container fadeswap visible" id="LoosestrifePersonalityFlip">
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Scattered</div>
+                      <div class="trait-content">Loosestrife has a great deal of trouble staying focused on one thing, tending to jump between ideas or simply lose his train of thought.</div>
+                    </div>
 
-                <div class="personality-trait">
-                  <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Quiet</div>
-                  <div class="trait-content">Even at his most comfortable, Spook both moves and speaks quietly. He's easily overstimulated and gets non-verbal in busy situations, so he's sometimes unable to talk at all.</div>
-                </div>
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Inquisitive</div>
+                      <div class="trait-content">New and different are interesting, and out of place means there's a story to be found. Loosestrife has a natural curiosity for oddities, and a love of chances to learn.</div>
+                    </div>
 
-                <div class="personality-trait">
-                  <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Cautious</div>
-                  <div class="trait-content">Spook does not make decisions without some kind of planning, and in dangerous situations, he'll always take the safest viable option - regardless of anything else.</div>
-                </div>
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Snarky</div>
+                      <div class="trait-content">Even as scattered as he is, Loosestrife will still take opportunities to talk back or make sarcastic comments, especially if he feels insulted.</div>
+                    </div>
 
-                <div class="personality-trait">
-                  <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Kind</div>
-                  <div class="trait-content">Spook has a big heart, and is kind to anyone who doesn't give him reason to be otherwise.</div>
-                </div>
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Compassionate</div>
+                      <div class="trait-content">Despite his prickly exterior, Loosestrife does genuinely want others to be happy, and finds ways to help where he can, even if it's more subtle, or he denies it outwardly.</div>
+                    </div>
 
-                <div class="personality-trait">
-                  <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Curious</div>
-                  <div class="trait-content">Despite his cautious nature, Spook absolutely loves seeing and learning about new things, taking in whatever he can while staying out of trouble.</div>
-                </div>
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Skittish</div>
+                      <div class="trait-content">In his current state, being around people and civilization feels like a terrible idea, so Loosestrife does his best to avoid all of it.</div>
+                    </div>
 
-                <div class="personality-trait">
-                  <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Honest</div>
-                  <div class="trait-content">Spook is an open book - he's not one for secrets, and he's not one for hiding his feelings or thoughts. Sometimes he can be harsh or blunt, but this is rarely intentional.</div>
-                </div>
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Apologetic</div>
+                      <div class="trait-content">Loosestrife doesn't often know what he's doing or what's going on, and is very quick to apologize if someone seems upset, with a tendency to assume he's done something he shouldn't.</div>
+                    </div>
 
-                 <div class="personality-trait">
-                  <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Focused</div>
-                  <div class="trait-content">Spook is incredibly good at staying on task. If he has his mind set on an objective, he'll puruse it diligently until it's completed, and is very hard to distract.</div>
-                </div>
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Tired</div>
+                      <div class="trait-content">Loosestrife has suffered chronic headaches and insomnia for most of his life, things only amplified by his current predicament. His overall demeanor is very worn.</div>
+                    </div>
 
-                <div class="personality-trait">
-                  <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Protective</div>
-                  <div class="trait-content">The few people Spook considers family are very important to him, and he does not take well to them being upset or harmed in any way. He will not hesitate to intervene.</div>
-                </div>
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Guarded</div>
+                      <div class="trait-content">Loosestrife is quite closed off emotionally, especially around strangers, tending to deflect with snark or dry jokes.</div>
+                    </div>
 
-                <div class="personality-trait">
-                  <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Volatile</div>
-                  <div class="trait-content">Although he's generally very calm and withdrawn, his sheltered upbringing shielded him from a lot of stronger emotions. If he's overwhelmed, his emotions can get the better of him.</div>
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-star-half-stroke"></i> Stubborn</div>
+                      <div class="trait-content">Loosestrife has a strong will, digging his heels in when it comes to things he particularly cares about. It can be very hard to change his mind.</div>
+                    </div>
+                </div>
+                <div class="personality-trait-container fadeswap" id="LoosestrifePersonalityFlipBack">
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-eye"></i> Scattered</div>
+                      <div class="trait-content">Loosestrife has a great deal of trouble staying focused on one thing, tending to jump between ideas or simply lose his train of thought.</div>
+                    </div>
+
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-eye"></i> Inquisitive</div>
+                      <div class="trait-content">New and different are interesting, and out of place means there's a story to be found. Loosestrife has a natural curiosity for oddities, and a love of chances to learn.</div>
+                    </div>
+
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-eye"></i> Mischevious</div>
+                      <div class="trait-content">Although it depends on the day, Loosestrife can sometimes be quite cheeky; finding small, (mostly) harmless ways to cause chaos.</div>
+                    </div>
+
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-eye"></i> Helpful</div>
+                      <div class="trait-content">If Loosestrife thinks he can help with something, he will without a second thought, no matter the task - for better or worse.</div>
+                    </div>
+
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-eye"></i> Outgoing</div>
+                      <div class="trait-content">Seeing new places and people is an extension of his natural curiosity - and he to be engaged and inlcuded in whatever he can be.</div>
+                    </div>
+
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-eye"></i> Unpredictable</div>
+                      <div class="trait-content">Loosestrife is victim to his whims, and most of his actions are done without any kind of forethought. His mood can change quickly, as can his actions, and even he often doesn't know his next move.</div>
+                    </div>
+
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-eye"></i> Excitable</div>
+                      <div class="trait-content">Loosestrife has energy akin to a caffeinated chihuahua, quite literally bouncing off the walls in new situations. His mind runs fast, and he often can't keep up.</div>
+                    </div>
+
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-eye"></i> Open</div>
+                      <div class="trait-content">Loosestrife is always happy to share anything and everything on his mind, although it's not always very coherent.</div>
+                    </div>
+
+                    <div class="personality-trait">
+                      <div class="trait-title"><i class="fa-solid fa-eye"></i> Persuadable</div>
+                      <div class="trait-content">Because Loosestrife always wants to be included and see new things, it can be quite easy to change his mind with a simple suggestion or new perspective.</div>
+                    </div>
                 </div>
 
               </div>

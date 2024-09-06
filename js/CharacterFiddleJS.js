@@ -467,6 +467,35 @@ function colourCode(evt, bgColour) {
   }
 
 
+// -------------------------------------------------- Misc Character Page Code ----------------------------------------------------------------------
+
+// Simple visibility toggle for paired elements
+
+  function fadeSwap(evt, Pair) {
+    var item1 = document.getElementById(Pair);
+    var item2 = document.getElementById(Pair + "Back");
+    var button = evt.target;
+    // Get both elements, with IDs labelled with Pair and PairBack
+    // Meant to work with eye icon from fontawesome as the button
+
+    if (item1.classList.contains("visible")) {
+      item1.classList.remove("visible");
+      item2.classList.add("visible");
+    } else if (item2.classList.contains("visible")) {
+      item2.classList.remove("visible");
+      item1.classList.add("visible");
+    }
+
+    if (button.classList.contains("fa-solid")) {
+      button.classList.remove("fa-solid");
+      button.classList.add("no-bg");
+    } else if (button.classList.contains("no-bg")) {
+      button.classList.remove("no-bg");
+      button.classList.add("fa-solid");
+    }
+  }
+
+
 // Random Number Generator to append to IMGs for variable images
 
   window.addEventListener("load", randomImage);
