@@ -175,6 +175,10 @@
       font-size: 90%;
     }
 
+    .dark {
+      mix-blend-mode: multiply;
+    }
+
     .left {
       text-align: left;
     }
