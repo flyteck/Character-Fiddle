@@ -1580,6 +1580,7 @@
       opacity: 0;
       display: flex;
       transition: 100ms ease;
+      flex: 0 0 0;
     }
 
     .base .front-layer img, .base .back-layer img {
@@ -2750,6 +2751,7 @@
       #outfits {
         flex-direction: column;
         max-height: none;
+        height: auto;
       }
 
       .dressup-container {
@@ -2760,6 +2762,7 @@
       .outfit-checkbox-container-wrapper {
         margin: 10px 0;
         max-height: calc(100vh - 140px);
+        max-width: none;
       }
 
       .outfit-checkbox-container-wrapper {
