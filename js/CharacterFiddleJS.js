@@ -379,7 +379,11 @@ function outfitToggle(evt, OutfitContainer) {
       i = 0;
 
     for(i; i < len; i++) {
-      shirts[i].classList.toggle("bracer-mask");
+      if (shirts[i].classList.contains("bracer-mask")) {
+        shirts[i].classList.remove("bracer-mask"); 
+      } else if (!shirts[i].classList.contains("bracer-mask")) {
+        shirts[i].classList.add("bracer-mask");
+      }
     }
   }
 
