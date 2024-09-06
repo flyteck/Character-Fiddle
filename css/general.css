@@ -87,12 +87,12 @@
     details > summary, details[open] > summary {
         list-style-type: none;
         position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     details > summary:after {
+        position: absolute;
+        right: 5px;
+        top: calc(50% - 10px);
         border: 1px solid #242460;
         background: #bcd4ff;
         content: '✖';
