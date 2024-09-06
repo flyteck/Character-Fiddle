@@ -2945,6 +2945,14 @@
       #HP, #AC {
         margin: 10px 0;
       }
+
+      #trivia {
+        padding: 18px 6px;
+      }
+
+      .trivia-blurb {
+        min-width: 0;
+      }
     }
 
     @media (max-width: 400px) {
