@@ -2577,6 +2577,10 @@
         background: none;
       }
 
+      .relationship-container {
+        margin: 0 auto 10px;
+      }
+
       .character-image-box {
         height: 80vh;
         width: 100%;
@@ -2833,6 +2837,7 @@
 
       .tab-one-container {
         max-height: none;
+        height: auto;
         gap: 0;
         padding: 20px 15px;
         border-width: 1px;
