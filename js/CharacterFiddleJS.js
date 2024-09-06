@@ -380,14 +380,12 @@ function outfitToggle(evt, OutfitContainer) {
 
     for(i; i < len; i++) {
       if (shirts[i].classList.contains("bracer-mask") || document.querySelector(".bracerright.clothing-visible") == null) {
+        //if shirts contain bracer-mask, AND the right bracer is not visible, remove the mask
         shirts[i].classList.remove("bracer-mask"); 
-        var test = document.querySelector(".bracerright.clothing-visible");
-        console.log(test);
 
       } else if (!shirts[i].classList.contains("bracer-mask") || document.querySelector(".bracerright.clothing-visible") !== null) {
         shirts[i].classList.add("bracer-mask");
-        var test = document.querySelector(".bracerright.clothing-visible");
-        console.log(test);
+        //if shirts contain don't bracer-mask, AND the right bracer IS visible, add the mask
       }
     }
   }
