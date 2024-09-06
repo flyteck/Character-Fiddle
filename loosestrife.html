@@ -1052,11 +1052,13 @@
 
                     <div class="bracers layer clothing-visible">
                       <div class="front-layer">
-                        <img src="img/dressup/loosestrife/bracerleft.png">
+                        <img src="img/dressup/loosestrife/bracerleft.png" style="opacity:0">
+                        <img src="img/dressup/loosestrife/bracerleft.png" class="clothing-visible bracerleft">
                         <img src="img/dressup/loosestrife/bracerright.png" class="bracerright">
                       </div>
                       <div class="back-layer">
-                        <img src="img/dressup/loosestrife/bracerleft-back.png">
+                        <img src="img/dressup/loosestrife/bracerleft-back.png" style="opacity:0">
+                        <img src="img/dressup/loosestrife/bracerleft-back.png" class="clothing-visible bracerleft">
                         <img src="img/dressup/loosestrife/bracerright-back.png" class="bracerright">
                       </div>
                     </div>
@@ -1152,6 +1154,9 @@
                         </label>
 
                         <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" checked class="bracers-checkbox bracers-toggle" onclick="outfitDisplay(event, 'bracers', 'bracers-toggle')">Bracers<span class="checkmark"></span>
+                        </label>
+
+                        <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" checked class="bracerleft-checkbox bracerleft-toggle" onclick="outfitDisplay(event, 'bracerleft', 'bracerleft-toggle');"><span><i class="fa-solid fa-angle-right"></i> Left Bracer</span><span class="checkmark"></span>
                         </label>
 
                         <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="bracerright-checkbox bracerright-toggle" onclick="outfitDisplay(event, 'bracerright', 'bracerright-toggle');bracerMask();"><span><i class="fa-solid fa-angle-right"></i> Right Bracer (optional)</span><span class="checkmark"></span>
