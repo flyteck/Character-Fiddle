@@ -1372,6 +1372,14 @@
       border-bottom: 2px solid #8da2c9;
     }
 
+    .dressup-container-inner {
+      filter: drop-shadow(1px 1px 0 #b3c2dd) drop-shadow(-1px -1px 0 #b3c2dd) drop-shadow(1px -1px 0 #b3c2dd) drop-shadow(-1px 1px 0 #b3c2dd);
+      display: flex;
+      justify-content: center;
+      flex: 1 1 auto;
+      max-height: 100%;
+    }
+
     .outfit-scroll-wrapper {
       max-height: 100%;
       overflow: auto;
