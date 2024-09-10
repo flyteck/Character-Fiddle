@@ -929,8 +929,8 @@
     }
 
     #album-covers {
-      margin: auto 10px;
-      max-width: 500px;
+      margin: 10px;
+      max-width: 55%;
       display: flex;
       max-height: 100%;
       aspect-ratio: 1;
@@ -951,6 +951,8 @@
       width: 100%;
       height: auto;
       opacity: 1;
+      aspect-ratio: 1;
+      margin: auto;
     }
 
     .songs-scroll-box {
@@ -1002,16 +1004,16 @@
     }
 
     .album-art {
-      width: 8vw;
-      height: 8vw;
+      width: 6vw;
+      height: 6vw;
       min-width: 50px;
       min-height: 50px;
       background-color: black;
-      border-radius: 20px;
+      border-radius: 10px;
       margin-right: 20px;
       background-position: center;
       background-size: cover;
-      flex: 0 0 8vw;
+      flex: 0 0 6vw;
     }
 
     /** comics (gallery) **/
@@ -2549,16 +2551,19 @@
       }
 
       .songs-containing-box {
-        display: flex;
-        flex-direction: column;
+        width:90%;
+      }
+
+      audio {
+        width: calc(100% - 10px);
+      }
+
+      .album-art {
+        margin-right: 10px;
       }
 
       .songs-scroll-box {
         margin-right: 0;
-      }
-
-      #album-covers {
-        display: none;
       }
     }
 
@@ -2578,6 +2583,10 @@
       .general-info-image {
         display:none;
         float: none;
+      }
+
+      #album-covers {
+        display: none;
       }
     }
 

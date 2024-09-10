@@ -238,7 +238,7 @@
 
     audio {
       width: calc(100% - 20px);
-      height: 40px;
+      height: 35px;
       margin: 7px 10px 7px 0;
       border-radius: 10px;
     }

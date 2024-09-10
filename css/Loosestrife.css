@@ -344,11 +344,11 @@ h1, h2, h3, h4 {
 }
 
 .song-container {
-    background-color: #545624;
+    background: #545624;
 }
 
 .music-player {
-    filter:invert(1) sepia(100%) hue-rotate(21deg) brightness(65%) contrast(280%) saturate(90%);
+    filter:sepia(100%) hue-rotate(21deg) contrast(100%) saturate(190%);
 }
 
 .music-player, .music-player a {
@@ -363,8 +363,12 @@ h1, h2, h3, h4 {
     color: #e4e2cd;
 }
 
-.song-title-wrapper a {
-    color: #563b34;
+.song-title-wrapper, .song-title-wrapper a {
+    color: #b1b342;
+}
+
+.song-title-wrapper a:hover, .song-title-wrapper a:focus {
+    color: #d1bad1;
 }
 
 .comic-wrapper {
