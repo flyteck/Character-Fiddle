@@ -237,31 +237,30 @@ function openModal(evt, itemNumber, container) {
   var songList = document.getElementById("song-list");
   //get the song container
   var playButtons = songList.querySelectorAll("audio");
-  console.log(playButtons);
-  //get all the individual songs
+  //get all the individual song players
 
   var coverList = document.getElementById("album-covers");
   //get the album container
   var albumCovers = coverList.querySelectorAll("img");
-  console.log(albumCovers);
     var albumCoversLen = albumCovers !== null ? albumCovers.length : 0;
   //get all covers in the album
 
   playButtons.forEach(function(button, index) {
         button.addEventListener("play", function() {
             var nowPlaying = albumCovers[index];
-            //get the album cover of the clicked song
-            console.log(nowPlaying);
+            //get the album cover with an index matching that of the clicked song
 
             for (let i = 0; i < albumCoversLen; i++) {
-              
+            //for all albums, remove "now-playing"
               albumCovers[i].classList.remove("now-playing");
               if (i !== index) {
+                //pause all players except the one that was clicked
                 playButtons[i].pause();
               }
             }
 
             nowPlaying.classList.add("now-playing");
+            //add "now-playing" to the clicked song's album cover
         });
       });
 
