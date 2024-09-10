@@ -236,23 +236,34 @@ function openModal(evt, itemNumber, container) {
 
   var songList = document.getElementById("song-list");
   //get the song container
-  var playButtons = songList.querySelectorAll("div");
+  var playButtons = songList.querySelectorAll("audio");
+  console.log(playButtons);
   //get all the individual songs
 
   var coverList = document.getElementById("album-covers");
   //get the album container
   var albumCovers = coverList.querySelectorAll("img");
+  console.log(albumCovers);
+    var albumCoversLen = albumCovers !== null ? albumCovers.length : 0;
   //get all covers in the album
 
-  songList.onclick=function(e){nowPlaying(e.target, Array.prototype.indexOf.call(this.children, e.target))}
+  playButtons.forEach(function(button, index) {
+        button.addEventListener("play", function() {
+            var nowPlaying = albumCovers[index];
+            //get the album cover of the clicked song
+            console.log(nowPlaying);
 
-  function nowPlaying(element, n) {
-    var nowPlaying = albumCovers[n];
-      for (var i = 0; i < albumCovers.length; i++) {
-          albumCovers[i].classList.remove("now-playing");
-          nowPlaying.classList.add("now-playing");
-      }
-    }
+            for (let i = 0; i < albumCoversLen; i++) {
+              
+              albumCovers[i].classList.remove("now-playing");
+              if (i !== index) {
+                playButtons[i].pause();
+              }
+            }
+
+            nowPlaying.classList.add("now-playing");
+        });
+      });
 
 // -------------------------------------------------- All Dressup code ----------------------------------------------------------------------
 
