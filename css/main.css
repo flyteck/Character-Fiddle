@@ -1014,6 +1014,24 @@
       background-position: center;
       background-size: cover;
       flex: 0 0 6vw;
+      position: relative;
+    }
+
+    .album-art .number {
+      position: absolute;
+      left: -5px;
+      bottom: -5px;
+      padding: 10px;
+      background: linear-gradient(#7d7f2f, #b1b342);
+      border-radius: 100%;
+      height: 15px;
+      width: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid #d8e6ff;
+      border-bottom: 1px solid #151a24;
+      color: black;
     }
 
     /** comics (gallery) **/
