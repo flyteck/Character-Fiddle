@@ -911,13 +911,43 @@
       z-index: 4;
     }
 
+    .songs-inner-wrapper {
+      display: flex;
+      height: calc(100% - 95px);
+    }
+
     .songs-containing-box {
       width: 80%;
       border-radius: 20px;
       background-color: #3c6ef8;
-      flex-direction: column;
       padding: 20px 15px;
+      max-height: 80vh;
       display: flex;
+      flex-direction: column;
+    }
+
+    #album-covers {
+      margin: auto 10px;
+      width: 50%;
+    }
+
+    #album-covers img {
+      display: none;
+    }
+
+    #album-covers img.now-playing {
+      border-radius: 10px;
+      display: block;
+      width: 100%;
+    }
+
+    .songs-scroll-box {
+      margin: 10px 0;
+      overflow: auto;
+      flex-grow: 1;
+      border: 1px dashed white;
+      border-left: none;
+      border-right: none;
     }
 
     .songs-containing-box a {
@@ -2500,6 +2530,19 @@
 
       .relationship-container {
         width: -webkit-fill-available;
+      }
+
+      .songs-containing-box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .songs-scroll-box {
+        margin-right: 0;
+      }
+
+      #album-covers {
+        display: none;
       }
     }
 

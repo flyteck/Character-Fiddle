@@ -194,6 +194,11 @@
 
     .rounded-image {
       border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .rounded-image.scaled {
+      max-height: 80vh;
     }
 
     .title {

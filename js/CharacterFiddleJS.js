@@ -232,6 +232,30 @@ function openModal(evt, itemNumber, container) {
 
 // -------------------------------------------------- All Dressup code ----------------------------------------------------------------------
 
+  //Now-Playing function for album covers (desktop)
+
+  var songList = document.getElementById("song-list");
+  //get the song container
+  var playButtons = songList.querySelectorAll("div");
+  //get all the individual songs
+
+  var coverList = document.getElementById("album-covers");
+  //get the album container
+  var albumCovers = coverList.querySelectorAll("img");
+  //get all covers in the album
+
+  songList.onclick=function(e){nowPlaying(e.target, Array.prototype.indexOf.call(this.children, e.target))}
+
+  function nowPlaying(element, n) {
+    var nowPlaying = albumCovers[n];
+      for (var i = 0; i < albumCovers.length; i++) {
+          albumCovers[i].classList.remove("now-playing");
+          nowPlaying.classList.add("now-playing");
+      }
+    }
+
+// -------------------------------------------------- All Dressup code ----------------------------------------------------------------------
+
 // Display clothing layers on click of checkbox, with subsection for hair
 function outfitDisplay(evt, clothingName, toggleName) {
     const checkbox = event.target;
@@ -360,6 +384,8 @@ function outfitToggle(evt, OutfitContainer) {
           button.classList.toggle('hide');
       }
 }
+
+//Consider rewriting logic for the jacket/bracer masks, using a passed variable to indicate what kind it is vs the function name
 
 // Add a mask to all shirts when the jacket is selected 
   function jacketMask() {

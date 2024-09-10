@@ -136,18 +136,21 @@ h1, h2, h3, h4 {
     border-color: #423530;
 }
 
-#LoosestrifePersonalityFlipBack.personality-trait-container  {
+#LoosestrifePersonalityFlipBack .personality-trait  {
     background: #0f1013;
 }
 
-#LoosestrifePersonalityFlipBack .personality-trait  {
+#LoosestrifePersonalityFlipBack .trait-title, #LoosestrifePersonalityFlipBack .trait-content  {
     background: rgb(64,255,238);
     background: -moz-linear-gradient(161deg, rgba(64,255,238,1) 0%, rgba(224,134,11,1) 52%, rgba(255,23,166,1) 100%);
     background: -webkit-linear-gradient(161deg, rgba(64,255,238,1) 0%, rgba(224,134,11,1) 52%, rgba(255,23,166,1) 100%);
     background: linear-gradient(161deg, rgba(64,255,238,1) 0%, rgba(224,134,11,1) 52%, rgba(255,23,166,1) 100%);
     color: transparent;
-    border-color: #e108e1;
     background-clip: text;
+}
+
+#LoosestrifePersonalityFlipBack.personality-trait-container .personality-trait {
+    border-color: #e108e1;
 }
 
 #LoosestrifePersonalityFlipBack.personality-trait-container .personality-trait:nth-child(odd) {
@@ -320,8 +323,32 @@ h1, h2, h3, h4 {
       background: linear-gradient(15deg, #242460, transparent);
  } 
 
- .song-container {
-      background: #6197ff;
+ .songs-containing-box {
+    background-color: #7d7f2f;
+}
+
+.song-container {
+    background-color: #545624;
+}
+
+.music-player {
+    filter:invert(1) sepia(100%) hue-rotate(21deg) brightness(65%) contrast(280%) saturate(90%);
+}
+
+.music-player, .music-player a {
+    color: #563b34;
+}
+
+.songs-scroll-box {
+      border-color: #c5bea7;
+}
+
+#music-container .title, .songs-containing-box a {
+    color: #e4e2cd;
+}
+
+.song-title-wrapper a {
+    color: #563b34;
 }
 
 .comic-wrapper {
