@@ -243,6 +243,73 @@
       border-radius: 10px;
     }
 
+    /* The container */
+    .toggle-check {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      position: relative;
+      cursor: pointer;
+      margin: 5px 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: 200ms ease;
+      font-size: 90%;
+      opacity: 0.6;
+    }
+
+    .toggle-check:hover, .toggle-check:focus {
+      opacity: 0.9;
+    }
+
+    /* Hide the browser's default checkbox */
+    .toggle-check input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .toggle-check .toggle-box {
+      left: 3px;
+      height: 20px;
+      width: 40px;
+      transition: 200ms ease;
+      border-radius: 20px;
+      opacity: 0.9;
+      display: block;
+      position: relative;
+      margin: 0 5px;
+      border: 1px solid #14143c;
+      cursor: pointer;
+    }
+
+    .toggle-box .ball {
+      height:18px;
+      width: 18px;
+      margin: 1px;
+      background: #14143c;
+      border-radius: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      transition: 200ms ease;
+    }
+
+    .toggle-check .toggle-box:hover, .toggle-check:focus-within ~ .toggle-box {
+      background-color: #6197ff;
+      opacity: 1;
+    }
+
+    /* When the checkbox is checked, move toggle ball and change colour */
+    .toggle-check input:checked ~ .toggle-box .ball {
+      left: calc(100% - 20px);
+      background-color: #d5e0f7;
+    }
+
     /* Archive Page Specific */
 
     #home p {

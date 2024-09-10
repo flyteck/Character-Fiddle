@@ -262,7 +262,24 @@ function openModal(evt, itemNumber, container) {
             nowPlaying.classList.add("now-playing");
             //add "now-playing" to the clicked song's album cover
         });
+
+        button.addEventListener("ended", function() {
+          //once a song ends, if autoplay is on, play the next song
+          var autoPlay = document.getElementById("auto-play-check");
+
+          if (autoPlay.checked) {
+              if (playButtons[index + 1] !== undefined) {
+                playButtons[index + 1].play();
+              } else {
+                //if at the last song, loop back to the first
+                playButtons[0].play();
+              }
+          } else {
+              return;
+          }
+        });
       });
+
 
 // -------------------------------------------------- All Dressup code ----------------------------------------------------------------------
 

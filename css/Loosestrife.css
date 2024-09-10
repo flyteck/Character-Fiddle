@@ -40,6 +40,22 @@ h1, h2, h3, h4 {
       filter: sepia(20%) hue-rotate(110deg);
     }
 
+.toggle-check .toggle-box {
+    border-color: #423530;
+}
+
+.toggle-box .ball {
+    background-color: #423530;
+}
+
+.toggle-check .toggle-box:hover, .toggle-check:focus-within ~ .toggle-box {
+    background-color: #b1b342;
+}
+
+.toggle-check input:checked ~ .toggle-box .ball {
+    background-color: #e108e1;
+}
+
 /** Main Image **/
 
 .main-image {
