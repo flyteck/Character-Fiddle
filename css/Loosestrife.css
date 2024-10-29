@@ -274,6 +274,10 @@ h1, h2, h3, h4 {
 	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
+#HP, #AC {
+    filter: invert(92%) sepia(20%) saturate(162%) hue-rotate(15deg) brightness(97%) contrast(89%);
+}
+
 .dnd-stat-container {
     background: linear-gradient(-15deg, #c4bcae, #e4e2cd);
     border-top: 2px solid #ffffff;
@@ -444,7 +448,7 @@ details > summary:hover:after, details > summary:focus:after {
 }
 
 .hairstyle-rec img {
-      background: url(https://flyteckscharactersheets.cfw.me/files/icons/bluestar.png) center/contain no-repeat;
+      background: url(../img/layout/bluestar.png) center/contain no-repeat;
 }
 
 .sticky-box {
@@ -474,11 +478,11 @@ details > summary:hover:after, details > summary:focus:after {
 
 .palette-button {
       border: 1px solid #242460;
-      background: #7d7f2f url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconscharacter.png) center center / 35px no-repeat;
+      background: #7d7f2f url(../img/dressup/spook/paletteiconscharacter.png) center center / 35px no-repeat;
 }
 
 #outfit-button {
-      background: #7d7f2f url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconsclothes.png) center center / 35px no-repeat;
+      background: #7d7f2f url(../img/dressup/spook/paletteiconsclothes.png) center center / 35px no-repeat;
 }
 
 .outfit-toggle, .front-back-toggle, .eye-toggle {

@@ -237,7 +237,7 @@
     }
 
     .eye-toggle.no-bg {
-      background: #7f98c6 url(https://flyteckscharactersheets.cfw.me/files/icons/invisibleicon.png) center center / 21px no-repeat;
+      background: #7f98c6 url(../img/layout/invisibleicon.png) center center / 21px no-repeat;
       color: transparent!important;
     }
 
@@ -487,16 +487,20 @@
     }
 
     #HP {
-      background: url(https://flyteckscharactersheets.cfw.me/files/heart_bg.svg) center center / 90% no-repeat;
+      background: url(../img/layout/heart.svg) center center / cover no-repeat;
     }
 
     #AC {
-      background: url(https://flyteckscharactersheets.cfw.me/files/shield_bg.svg) center center / 82% no-repeat;
+      background: url(../img/layout/shield.svg) center center / contain no-repeat;
     }
 
     #HP .flex-column, #AC .flex-column {
       align-items: center;
       margin: 0 0 6%;
+    }
+
+    #HP span, #AC span {
+        filter: invert(100%) saturate(0);
     }
 
     .dnd-flex .info-inner, .dnd-flex .info-inner-lg {
@@ -1563,7 +1567,7 @@
       height: 25px;
       width: 25px;
       transition: 200ms ease;
-      background: url(https://flyteckscharactersheets.cfw.me/files/icons/invisibleicon.png) center center / 20px no-repeat;
+      background: url(../img/layout/invisibleicon.png) center center / 20px no-repeat;
       border-radius: 4px;
       opacity: 0.9;
     }
@@ -1575,7 +1579,7 @@
 
     /* When the checkbox is checked, swap eye background */
     .clothing-checkbox-container input:checked ~ .checkmark {
-      background: url(https://flyteckscharactersheets.cfw.me/files/icons/visibleicon.png) center center/20px no-repeat, #8cb2f5;
+      background: url(../img/layout/visibleicon.png) center center/20px no-repeat, #8cb2f5;
     }
 
     .toggle-flex {

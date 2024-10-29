@@ -87,10 +87,14 @@ body {
 }
 
 .dnd-image {
-	background: url(https://flyteckscharactersheets.cfw.me/files/spookmini.png) center / contain no-repeat;
+	background: url(../img/layout/spookmini.png) center / contain no-repeat;
 	border-top: 1px solid #ffffff;
 	border-bottom: 1px solid #14143c;
 	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+#HP, #AC {
+    filter: invert(87%) sepia(5%) saturate(1093%) hue-rotate(197deg) brightness(108%) contrast(104%);
 }
 
 .dnd-stat-container {
@@ -187,7 +191,7 @@ body {
 }
 
 .dressup-container {
-    background: url(https://flyteckscharactersheets.cfw.me/files/dots.png) center / 300px, linear-gradient(180deg, #b3c2dd 0, #3a3f55 100%);
+    background: url(../img/dressup/spook/dressupBG.png) center / 400px, linear-gradient(180deg, #b3c2dd 0, #3a3f55 100%);
     border: 1px solid #7890b9;
     box-shadow: rgb(59 60 74) 3px 3px 6px 0px inset, rgb(45 45 65 / 25%) -3px -3px 6px 1px inset;
     border-top: 2px solid #6984ab;
@@ -201,7 +205,7 @@ body {
 }
 
 .hairstyle-rec img {
-      background: url(https://flyteckscharactersheets.cfw.me/files/icons/bluestar.png) center/contain no-repeat;
+      background: url(../img/layout/bluestar.png) center/contain no-repeat;
 }
 
 .outfit-checkbox-container {
@@ -225,11 +229,11 @@ body {
 .palette-button {
       background-color: #bcd4ff;
       border: 1px solid #242460;
-      background: #bcd4ff url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconscharacter.png) center center / 35px no-repeat;
+      background: #bcd4ff url(../img/dressup/spook/paletteiconscharacter.png) center center / 35px no-repeat;
 }
 
 #outfit-button {
-      background: #bcd4ff url(https://flyteckscharactersheets.cfw.me/files/icons/paletteiconsclothes.png) center center / 35px no-repeat;
+      background: #bcd4ff url(../img/dressup/spook/paletteiconsclothes.png) center center / 35px no-repeat;
 }
 
 .outfit-toggle, .front-back-toggle {
