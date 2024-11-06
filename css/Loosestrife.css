@@ -275,7 +275,8 @@ h1, h2, h3, h4 {
 }
 
 #HP, #AC {
-    filter: invert(92%) sepia(20%) saturate(162%) hue-rotate(15deg) brightness(97%) contrast(89%);
+    filter: invert(92%) sepia(20%) saturate(162%) hue-rotate(15deg) brightness(97%) contrast(89%) drop-shadow(0px 1px #7d7f2f) drop-shadow(0px -1px #ffffff);
+    /** make sure to add the drop shadow after each of the colour filters **/
 }
 
 .dnd-stat-container {

@@ -182,7 +182,8 @@ hr {
 }
 
 #HP, #AC {
-    filter: invert(86%) sepia(29%) saturate(168%) hue-rotate(200deg) brightness(105%) contrast(102%);
+    filter: invert(86%) sepia(29%) saturate(168%) hue-rotate(200deg) brightness(105%) contrast(102%) drop-shadow(0px 1px #7c5cc0) drop-shadow(0px -1px #ffffff);
+    /** make sure to add the drop shadow after each of the colour filters **/
 }
 
 .dnd-stat-container .value {
