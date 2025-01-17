@@ -1264,6 +1264,16 @@
                             <img src="img/dressup/loosestrife/messyhair.png">
                         </div>
                     </div>
+
+                    <div class="shorthair layer">
+                        <div class="front-layer">
+                            <img src="img/dressup/loosestrife/shorthairbangsup.png">
+                             <img src="img/dressup/loosestrife/shorthair.png">
+                        </div>
+                        <div class="back-layer">
+                            <img src="img/dressup/loosestrife/shorthair.png">
+                        </div>
+                    </div>
                     <!--- Hair/Access In Front of Clothes /-->
 
                     <!--- Dressup Layers /-->
@@ -1374,48 +1384,15 @@
 
                       </div>
 
-                      <div class="outfit-checkbox-container" id="RainbowShirt">
+                      <div class="outfit-checkbox-container" id="NewOutfit">
                         <h4 class="toggle-flex">
-                          Rainbow Shirt <button class="outfit-toggle toggle-flex" onclick="outfitToggle(event, 'RainbowShirt')"></button>
+                          New Outfit <button class="outfit-toggle toggle-flex hide" onclick="outfitToggle(event, 'Default'), hairClick(event, 'shorthair')"></button>
                         </h4>
-                        <div class="hairstyle-rec"><img src="img/layout/hairbrushicon.png"> Any</div>
+                        <div class="hairstyle-rec" onclick="hairClick(event, 'shorthair')"><img src="img/layout/hairbrushicon.png"> Short (only)</div>
                          <label class="clothing-checkbox-container shirt-toggle"><input type="checkbox" autocomplete="off" class="clothing-checkbox rainbowshirt-toggle" onclick="outfitDisplay(event, 'RainbowShirt', 'rainbowshirt-toggle')">Rainbow Shirt<span class="checkmark"></span></label>
                          <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox pearlearrings-toggle" onclick="outfitDisplay(event, 'PearlEarrings', 'pearlearrings-toggle')">Pearl Earrings<span class="checkmark"></span></label>
                          <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox pearlnecklace-toggle" onclick="outfitDisplay(event, 'PearlNecklace', 'pearlnecklace-toggle')">Pearl Necklace<span class="checkmark"></span></label>
                          <label class="clothing-checkbox-container ribbon-toggle"><input type="checkbox" autocomplete="off" class="clothing-checkbox pink-ribbon-toggle" onclick="outfitDisplay(event, 'PinkRibbon', 'pink-ribbon-toggle')">Pink Ribbon<span class="checkmark"></span></label>
-                      </div>
-
-                      <div class="outfit-checkbox-container" id="RedShirt">
-                        <h4 class="toggle-flex">
-                          Red Shirt <button class="outfit-toggle toggle-flex" onclick="outfitToggle(event, 'RedShirt')"></button>
-                        </h4>
-                        <div class="hairstyle-rec"><img src="img/layout/hairbrushicon.png"> Any</div>
-                         <label class="clothing-checkbox-container shirt-toggle"><input type="checkbox" autocomplete="off" class="clothing-checkbox redshirt-toggle" onclick="outfitDisplay(event, 'RedShirt', 'redshirt-toggle')">Red Shirt<span class="checkmark"></span></label>
-                         <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox goldhoops-toggle" onclick="outfitDisplay(event, 'GoldHoops', 'goldhoops-toggle')">Gold Hoops<span class="checkmark"></span></label>
-                         <label class="clothing-checkbox-container ribbon-toggle"><input type="checkbox" autocomplete="off" class="clothing-checkbox red-ribbon-toggle" onclick="outfitDisplay(event, 'RedRibbon', 'red-ribbon-toggle')">Red Ribbon<span class="checkmark"></span></label>
-                      </div>
-
-                      <div class="outfit-checkbox-container" id="DragonShirt">
-                        <h4 class="toggle-flex">
-                          Dragon Shirt <button class="outfit-toggle toggle-flex" onclick="outfitToggle(event, 'DragonShirt')"></button>
-                        </h4>
-                        <div class="hairstyle-rec" onclick="hairClick(event, 'messyhair')"><img src="img/layout/hairbrushicon.png"> messyhair</div>
-                         <label class="clothing-checkbox-container shirt-toggle"><input type="checkbox" autocomplete="off" class="clothing-checkbox dragonshirt-toggle" onclick="outfitDisplay(event, 'DragonShirt', 'dragonshirt-toggle')">Dragon Shirt<span class="checkmark"></span></label>
-                         <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox dragoncuffs-toggle" onclick="outfitDisplay(event, 'DragonCuffs', 'dragoncuffs-toggle')">Gold Dragon Cuffs<span class="checkmark"></span></label>
-                         <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox drakeearrings-toggle" onclick="outfitDisplay(event, 'DrakeEarrings', 'drakeearrings-toggle')">Drake Scale Earrings<span class="checkmark"></span></label>
-                         <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox drakenecklace-toggle" onclick="outfitDisplay(event, 'DrakeNecklace', 'drakenecklace-toggle')">Drake Scale Necklace<span class="checkmark"></span></label>
-                      </div>
-
-                      <div class="outfit-checkbox-container" id="GreenShirt">
-                        <h4 class="toggle-flex">
-                          Green Shirt <button class="outfit-toggle toggle-flex" onclick="outfitToggle(event, 'GreenShirt')"></button>
-                        </h4>
-                        <div class="hairstyle-rec"><img src="img/layout/hairbrushicon.png"> Any</div>
-                         <label class="clothing-checkbox-container shirt-toggle"><input type="checkbox" autocomplete="off" class="clothing-checkbox greenshirt-toggle" onclick="outfitDisplay(event, 'GreenShirt', 'greenshirt-toggle')">Green Shirt<span class="checkmark"></span></label>
-                         <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox goldhoops-toggle" onclick="outfitDisplay(event, 'GoldHoops', 'goldhoops-toggle')">Gold Hoops<span class="checkmark"></span></label>
-                         <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox pearlearrings-toggle" onclick="outfitDisplay(event, 'PearlEarrings', 'pearlearrings-toggle')">Pearl Earrings<span class="checkmark"></span></label>
-                         <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox pearlnecklace-toggle" onclick="outfitDisplay(event, 'PearlNecklace', 'pearlnecklace-toggle')">Pearl Necklace<span class="checkmark"></span></label>
-                         <label class="clothing-checkbox-container ribbon-toggle"><input type="checkbox" autocomplete="off" class="clothing-checkbox pink-ribbon2-toggle" onclick="outfitDisplay(event, 'PinkRibbon2', 'pink-ribbon2-toggle')">Light Pink Ribbon<span class="checkmark"></span></label>
                       </div>
 
                     </div></div>
