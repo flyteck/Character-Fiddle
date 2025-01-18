@@ -1129,6 +1129,11 @@
                       <div class="back-layer"><img src="img/dressup/loosestrife/shorthairbangs-back.png" loading="lazy"></div>
                     </div>
 
+                    <div class="shorthairbangs layer">
+                      <div class="front-layer"><img src="img/dressup/loosestrife/shorthair.png" loading="lazy"></div>
+                      <div class="back-layer"><img src="img/dressup/loosestrife/shorthairbangs-back.png" loading="lazy"></div>
+                    </div>
+
                     <div class="beltwrap layer clothing-visible">
                       <div class="front-layer random-image">
                         <img src="img/dressup/loosestrife/belt.png" style="opacity: 1;">
@@ -1205,9 +1210,22 @@
                       <div class="back-layer"><img src="img/dressup/loosestrife/oldshirt-back.png" class="shirt-back"></div>
                     </div>
 
-                    <div class="longsleeveshirt layer">
-                      <div class="front-layer"><img src="img/dressup/loosestrife/longsleeveshirt.png" class="shirt"></div>
-                      <div class="back-layer"><img src="img/dressup/loosestrife/longsleeveshirt-back.png" class="shirt-back"></div>
+                    <div class="longsleeveshirtdown layer">
+                      <div class="front-layer">
+                        <img src="img/dressup/loosestrife/longsleeveshirt.png" class="shirt">
+                      </div>
+                      <div class="back-layer">
+                        <img src="img/dressup/loosestrife/longsleeveshirt-back.png" class="shirt-back">
+                      </div>
+                    </div>
+
+                    <div class="longsleeveshirtrolled layer">
+                      <div class="front-layer">
+                        <img src="img/dressup/loosestrife/longsleeveshirtrolled.png" class="shirt">
+                      </div>
+                      <div class="back-layer">
+                        <img src="img/dressup/loosestrife/longsleeveshirtrolled-back.png" class="shirt-back">
+                      </div>
                     </div>
 
                     <div class="maroonvest layer">
@@ -1313,6 +1331,15 @@
                         </div>
                     </div>
 
+                    <div class="shorthairbangs layer">
+                        <div class="front-layer">
+                             <img src="img/dressup/loosestrife/shorthairbangsdown.png">
+                        </div>
+                        <div class="back-layer">
+                            <img src="img/dressup/loosestrife/shorthair.png">
+                        </div>
+                    </div>
+
                     <!--- Hair/Access In Front of Clothes /-->
 
                     <!--- Dressup Layers /-->
@@ -1349,6 +1376,7 @@
                       <div class="details-body">
                           <label class="clothing-checkbox-container hair"><input id="messyhair" disabled type="checkbox" autocomplete="off" checked class="clothing-checkbox messyhair-toggle" onclick="outfitDisplay(event, 'messyhair', 'messyhair-toggle')">Messy<span class="checkmark"></span></label>
                           <label class="clothing-checkbox-container hair"><input id="shorthair" type="checkbox" autocomplete="off" class="clothing-checkbox shorthair-toggle" onclick="outfitDisplay(event, 'shorthair', 'shorthair-toggle')">Short<span class="checkmark"></span></label>
+                          <label class="clothing-checkbox-container hair"><input id="shorthairbangs" type="checkbox" autocomplete="off" class="clothing-checkbox shorthairbangs-toggle" onclick="outfitDisplay(event, 'shorthairbangs', 'shorthairbangs-toggle')">Short (Bangs)<span class="checkmark"></span></label>
 
                           <div class="subtitle">Hairstyles are interchangeable, but outfits may have reccomendations</div>
                         </div>
@@ -1428,10 +1456,19 @@
                         <h4 class="toggle-flex">
                           New Outfit <button class="outfit-toggle toggle-flex" onclick="outfitToggle(event, 'Newoutfit'), hairClick(event, 'shorthair')"></button>
                         </h4>
-                        <div class="hairstyle-rec" onclick="hairClick(event, 'shorthair')"><img src="img/layout/hairbrushicon.png"> Short (only)</div>
+                        <div class="toggle-flex" style="justify-content: flex-start;">
+                            <div class="hairstyle-rec" onclick="hairClick(event, 'shorthair')"><img src="img/layout/hairbrushicon.png"> Short</div> <span class="hairstyle-rec">&nbsp;&nbsp;or&nbsp;&nbsp;</span> <button class="hairstyle-rec" onclick="hairClick(event, 'shorthairbangs')"><img src="img/layout/hairbrushicon.png">  Short Bangs (only)</button>
+                        </div>
+                        
+                        <span class="clothing-checkbox-container" style="pointer-events:none;">Long Sleeve Shirt</span>
 
+                        <div class="toggle-flex" style="opacity:0.9;"><label class="clothing-checkbox-container shirt-toggle sub-option"><input type="checkbox" autocomplete="off" class="clothing-checkbox longsleeveshirtrolled-toggle" onclick="outfitDisplay(event, 'longsleeveshirtrolled', 'longsleeveshirtrolled-toggle')"><span>Sleeves Rolled Up</span><span class="checkmark"></span></label>
 
-                         <label class="clothing-checkbox-container shirt-toggle"><input type="checkbox" autocomplete="off" class="clothing-checkbox longsleeveshirt-toggle" onclick="outfitDisplay(event, 'longsleeveshirt', 'longsleeveshirt-toggle')">Long Sleeve Shirt<span class="checkmark"></span></label>
+                            &nbsp;&nbsp;
+
+                        <label class="clothing-checkbox-container shirt-toggle sub-option"><input type="checkbox" autocomplete="off" class="clothing-checkbox longsleeveshirtdown-toggle" onclick="outfitDisplay(event, 'longsleeveshirtdown', 'longsleeveshirtdown-toggle')"><span>Sleeves Down</span><span class="checkmark"></span></label>
+                        </div>
+
                          <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox maroonvest-toggle" onclick="outfitDisplay(event, 'maroonvest', 'maroonvest-toggle')">Maroon Vest<span class="checkmark"></span></label>
                          <label class="clothing-checkbox-container"><input type="checkbox" autocomplete="off" class="clothing-checkbox highwaistpants-toggle" onclick="outfitDisplay(event, 'highwaistpants', 'highwaistpants-toggle')">Pants<span class="checkmark"></span></label>
 
